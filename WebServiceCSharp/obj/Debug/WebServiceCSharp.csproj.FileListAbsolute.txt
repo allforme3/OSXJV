@@ -1,0 +1,17 @@
+C:\Users\Allforme3\Documents\Visual Studio 2015\Projects\WebServiceCSharp\WebServiceCSharp\bin\Debug\WebServiceCSharp.exe.config
+C:\Users\Allforme3\Documents\Visual Studio 2015\Projects\WebServiceCSharp\WebServiceCSharp\bin\Debug\WebServiceCSharp.XML
+C:\Users\Allforme3\Documents\Visual Studio 2015\Projects\WebServiceCSharp\WebServiceCSharp\bin\Debug\WebServiceCSharp.exe
+C:\Users\Allforme3\Documents\Visual Studio 2015\Projects\WebServiceCSharp\WebServiceCSharp\bin\Debug\WebServiceCSharp.pdb
+C:\Users\Allforme3\Documents\Visual Studio 2015\Projects\WebServiceCSharp\WebServiceCSharp\bin\Debug\Castle.Core.dll
+C:\Users\Allforme3\Documents\Visual Studio 2015\Projects\WebServiceCSharp\WebServiceCSharp\bin\Debug\HttpMultipartParser.dll
+C:\Users\Allforme3\Documents\Visual Studio 2015\Projects\WebServiceCSharp\WebServiceCSharp\bin\Debug\Moq.dll
+C:\Users\Allforme3\Documents\Visual Studio 2015\Projects\WebServiceCSharp\WebServiceCSharp\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Allforme3\Documents\Visual Studio 2015\Projects\WebServiceCSharp\WebServiceCSharp\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\Allforme3\Documents\Visual Studio 2015\Projects\WebServiceCSharp\WebServiceCSharp\bin\Debug\Castle.Core.xml
+C:\Users\Allforme3\Documents\Visual Studio 2015\Projects\WebServiceCSharp\WebServiceCSharp\bin\Debug\HttpMultipartParser.xml
+C:\Users\Allforme3\Documents\Visual Studio 2015\Projects\WebServiceCSharp\WebServiceCSharp\bin\Debug\Moq.xml
+C:\Users\Allforme3\Documents\Visual Studio 2015\Projects\WebServiceCSharp\WebServiceCSharp\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Allforme3\Documents\Visual Studio 2015\Projects\WebServiceCSharp\WebServiceCSharp\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\Allforme3\Documents\Visual Studio 2015\Projects\WebServiceCSharp\WebServiceCSharp\obj\Debug\WebServiceCSharp.exe
+C:\Users\Allforme3\Documents\Visual Studio 2015\Projects\WebServiceCSharp\WebServiceCSharp\obj\Debug\WebServiceCSharp.pdb
+C:\Users\Allforme3\Documents\Visual Studio 2015\Projects\WebServiceCSharp\WebServiceCSharp\obj\Debug\WebServiceCSharp.csprojResolveAssemblyReference.cache

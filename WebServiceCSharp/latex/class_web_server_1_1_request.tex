@@ -1,0 +1,150 @@
+\hypertarget{class_web_server_1_1_request}{}\section{Web\+Server.\+Request Class Reference}
+\label{class_web_server_1_1_request}\index{Web\+Server.\+Request@{Web\+Server.\+Request}}
+
+
+ 
+
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_web_server_1_1_request}{Request} \hyperlink{class_web_server_1_1_request_aa79751fd888bac7c160ab4d06ba6d20a}{Get\+Request} (string \hyperlink{class_web_server_1_1_request_ae3ceee9488c19850b8b30787ea580b2d}{filename}, string \hyperlink{class_web_server_1_1_request_aed71124c91213d66448f2d4a4133dd22}{type}, string \hyperlink{class_web_server_1_1_request_aae3042ee0bc222bb9f2cd8ac00895848}{data})
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{class_web_server_1_1_request_a1797bd8f10a7b7131cf7b90df7a250af}{Filename}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em To retrieve the filename of the document \end{DoxyCompactList}\item 
+string \hyperlink{class_web_server_1_1_request_a97f8cec3d26773cdc2d227817be59bfe}{Type}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em To retrieve type of document \end{DoxyCompactList}\item 
+string \hyperlink{class_web_server_1_1_request_a42134399b1ac8892af03d7f0a52dcd2d}{Data}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em To retrieve the document data \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_web_server_1_1_request_a0b50f163bb69df3aabb9046c44c9446a}{Request} (string \hyperlink{class_web_server_1_1_request_ae3ceee9488c19850b8b30787ea580b2d}{filename}, string \hyperlink{class_web_server_1_1_request_aed71124c91213d66448f2d4a4133dd22}{type}, string \hyperlink{class_web_server_1_1_request_aae3042ee0bc222bb9f2cd8ac00895848}{data})
+\begin{DoxyCompactList}\small\item\em Initialises the \hyperlink{class_web_server_1_1_request}{Request} object, can only be called from Get\+Request(...). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{class_web_server_1_1_request_ae3ceee9488c19850b8b30787ea580b2d}{filename}
+\item 
+string \hyperlink{class_web_server_1_1_request_aed71124c91213d66448f2d4a4133dd22}{type}
+\item 
+string \hyperlink{class_web_server_1_1_request_aae3042ee0bc222bb9f2cd8ac00895848}{data}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_web_server_1_1_request_a0b50f163bb69df3aabb9046c44c9446a}\label{class_web_server_1_1_request_a0b50f163bb69df3aabb9046c44c9446a}} 
+\index{Web\+Server\+::\+Request@{Web\+Server\+::\+Request}!Request@{Request}}
+\index{Request@{Request}!Web\+Server\+::\+Request@{Web\+Server\+::\+Request}}
+\subsubsection{\texorpdfstring{Request()}{Request()}}
+{\footnotesize\ttfamily Web\+Server.\+Request.\+Request (\begin{DoxyParamCaption}\item[{string}]{filename,  }\item[{string}]{type,  }\item[{string}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Initialises the \hyperlink{class_web_server_1_1_request}{Request} object, can only be called from Get\+Request(...). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & The document filename e.\+g. Test\\
+\hline
+{\em type} & The document file type e.\+g. text/xml\\
+\hline
+{\em data} & The document data e.\+g. \{\char`\"{}name\char`\"{}\+:\char`\"{}bob,\char`\"{}address\char`\"{}\+:\char`\"{}123 Somewhere\char`\"{}\}\char`\"{}\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_web_server_1_1_request_aa79751fd888bac7c160ab4d06ba6d20a}\label{class_web_server_1_1_request_aa79751fd888bac7c160ab4d06ba6d20a}} 
+\index{Web\+Server\+::\+Request@{Web\+Server\+::\+Request}!Get\+Request@{Get\+Request}}
+\index{Get\+Request@{Get\+Request}!Web\+Server\+::\+Request@{Web\+Server\+::\+Request}}
+\subsubsection{\texorpdfstring{Get\+Request()}{GetRequest()}}
+{\footnotesize\ttfamily static \hyperlink{class_web_server_1_1_request}{Request} Web\+Server.\+Request.\+Get\+Request (\begin{DoxyParamCaption}\item[{string}]{filename,  }\item[{string}]{type,  }\item[{string}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & The document filename e.\+g. Test\\
+\hline
+{\em type} & The document file type e.\+g. text/xml\\
+\hline
+{\em data} & The document data e.\+g. \{\char`\"{}name\char`\"{}\+:\char`\"{}bob,\char`\"{}address\char`\"{}\+:\char`\"{}123 Somewhere\char`\"{}\}\char`\"{}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_web_server_1_1_request_aae3042ee0bc222bb9f2cd8ac00895848}\label{class_web_server_1_1_request_aae3042ee0bc222bb9f2cd8ac00895848}} 
+\index{Web\+Server\+::\+Request@{Web\+Server\+::\+Request}!data@{data}}
+\index{data@{data}!Web\+Server\+::\+Request@{Web\+Server\+::\+Request}}
+\subsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily string Web\+Server.\+Request.\+data\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_web_server_1_1_request_ae3ceee9488c19850b8b30787ea580b2d}\label{class_web_server_1_1_request_ae3ceee9488c19850b8b30787ea580b2d}} 
+\index{Web\+Server\+::\+Request@{Web\+Server\+::\+Request}!filename@{filename}}
+\index{filename@{filename}!Web\+Server\+::\+Request@{Web\+Server\+::\+Request}}
+\subsubsection{\texorpdfstring{filename}{filename}}
+{\footnotesize\ttfamily string Web\+Server.\+Request.\+filename\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+
+
+\mbox{\Hypertarget{class_web_server_1_1_request_aed71124c91213d66448f2d4a4133dd22}\label{class_web_server_1_1_request_aed71124c91213d66448f2d4a4133dd22}} 
+\index{Web\+Server\+::\+Request@{Web\+Server\+::\+Request}!type@{type}}
+\index{type@{type}!Web\+Server\+::\+Request@{Web\+Server\+::\+Request}}
+\subsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily string Web\+Server.\+Request.\+type\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_web_server_1_1_request_a42134399b1ac8892af03d7f0a52dcd2d}\label{class_web_server_1_1_request_a42134399b1ac8892af03d7f0a52dcd2d}} 
+\index{Web\+Server\+::\+Request@{Web\+Server\+::\+Request}!Data@{Data}}
+\index{Data@{Data}!Web\+Server\+::\+Request@{Web\+Server\+::\+Request}}
+\subsubsection{\texorpdfstring{Data}{Data}}
+{\footnotesize\ttfamily string Web\+Server.\+Request.\+Data\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+To retrieve the document data 
+
+\mbox{\Hypertarget{class_web_server_1_1_request_a1797bd8f10a7b7131cf7b90df7a250af}\label{class_web_server_1_1_request_a1797bd8f10a7b7131cf7b90df7a250af}} 
+\index{Web\+Server\+::\+Request@{Web\+Server\+::\+Request}!Filename@{Filename}}
+\index{Filename@{Filename}!Web\+Server\+::\+Request@{Web\+Server\+::\+Request}}
+\subsubsection{\texorpdfstring{Filename}{Filename}}
+{\footnotesize\ttfamily string Web\+Server.\+Request.\+Filename\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+To retrieve the filename of the document 
+
+\mbox{\Hypertarget{class_web_server_1_1_request_a97f8cec3d26773cdc2d227817be59bfe}\label{class_web_server_1_1_request_a97f8cec3d26773cdc2d227817be59bfe}} 
+\index{Web\+Server\+::\+Request@{Web\+Server\+::\+Request}!Type@{Type}}
+\index{Type@{Type}!Web\+Server\+::\+Request@{Web\+Server\+::\+Request}}
+\subsubsection{\texorpdfstring{Type}{Type}}
+{\footnotesize\ttfamily string Web\+Server.\+Request.\+Type\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+To retrieve type of document 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_request_8cs}{Request.\+cs}\end{DoxyCompactItemize}

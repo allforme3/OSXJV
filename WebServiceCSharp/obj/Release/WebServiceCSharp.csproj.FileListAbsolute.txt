@@ -1,0 +1,16 @@
+C:\Users\Allforme3\Documents\Visual Studio 2015\Projects\WebServiceCSharp\WebServiceCSharp\bin\Release\WebServiceCSharp.exe.config
+C:\Users\Allforme3\Documents\Visual Studio 2015\Projects\WebServiceCSharp\WebServiceCSharp\bin\Release\WebServiceCSharp.exe
+C:\Users\Allforme3\Documents\Visual Studio 2015\Projects\WebServiceCSharp\WebServiceCSharp\bin\Release\WebServiceCSharp.pdb
+C:\Users\Allforme3\Documents\Visual Studio 2015\Projects\WebServiceCSharp\WebServiceCSharp\bin\Release\Castle.Core.dll
+C:\Users\Allforme3\Documents\Visual Studio 2015\Projects\WebServiceCSharp\WebServiceCSharp\bin\Release\HttpMultipartParser.dll
+C:\Users\Allforme3\Documents\Visual Studio 2015\Projects\WebServiceCSharp\WebServiceCSharp\bin\Release\Moq.dll
+C:\Users\Allforme3\Documents\Visual Studio 2015\Projects\WebServiceCSharp\WebServiceCSharp\bin\Release\Newtonsoft.Json.dll
+C:\Users\Allforme3\Documents\Visual Studio 2015\Projects\WebServiceCSharp\WebServiceCSharp\bin\Release\System.Net.Http.Formatting.dll
+C:\Users\Allforme3\Documents\Visual Studio 2015\Projects\WebServiceCSharp\WebServiceCSharp\bin\Release\Castle.Core.xml
+C:\Users\Allforme3\Documents\Visual Studio 2015\Projects\WebServiceCSharp\WebServiceCSharp\bin\Release\HttpMultipartParser.xml
+C:\Users\Allforme3\Documents\Visual Studio 2015\Projects\WebServiceCSharp\WebServiceCSharp\bin\Release\Moq.xml
+C:\Users\Allforme3\Documents\Visual Studio 2015\Projects\WebServiceCSharp\WebServiceCSharp\bin\Release\Newtonsoft.Json.xml
+C:\Users\Allforme3\Documents\Visual Studio 2015\Projects\WebServiceCSharp\WebServiceCSharp\bin\Release\System.Net.Http.Formatting.xml
+C:\Users\Allforme3\Documents\Visual Studio 2015\Projects\WebServiceCSharp\WebServiceCSharp\obj\Release\WebServiceCSharp.exe
+C:\Users\Allforme3\Documents\Visual Studio 2015\Projects\WebServiceCSharp\WebServiceCSharp\obj\Release\WebServiceCSharp.pdb
+C:\Users\Allforme3\Documents\Visual Studio 2015\Projects\WebServiceCSharp\WebServiceCSharp\obj\Release\WebServiceCSharp.csprojResolveAssemblyReference.cache

@@ -1,0 +1,219 @@
+\hypertarget{class_web_server_1_1_process}{}\section{Web\+Server.\+Process Class Reference}
+\label{class_web_server_1_1_process}\index{Web\+Server.\+Process@{Web\+Server.\+Process}}
+
+
+ 
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_web_server_1_1_node}{Node} \hyperlink{class_web_server_1_1_process_a1e01d70b31479a65280fbfbab855861b}{Process\+Document} ()
+\begin{DoxyCompactList}\small\item\em Processes the document sent via server \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_web_server_1_1_process}{Process} \hyperlink{class_web_server_1_1_process_a8426008d439d0beef6f59c757a2c22eb}{Get\+Process} (string data, string \hyperlink{class_web_server_1_1_process_ae8a1513688e4d9e54294cff90728ea91}{type})
+\begin{DoxyCompactList}\small\item\em Creates and returns a new process object \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_web_server_1_1_process_acaf397891f58f68bf8e1704f9fc8a8b0}{Process} (X\+Document doc, string \hyperlink{class_web_server_1_1_process_ae8a1513688e4d9e54294cff90728ea91}{type})
+\begin{DoxyCompactList}\small\item\em Initalisation of the object that prepares before processing \end{DoxyCompactList}\item 
+\hyperlink{class_web_server_1_1_node}{Node} \hyperlink{class_web_server_1_1_process_ac7600e6ea07887aeb2f23f4e0a5dd01a}{Process\+Element} (X\+Element e, \hyperlink{class_web_server_1_1_node}{Node} \hyperlink{class_web_server_1_1_process_ae62fa93d1a1f981b11418b620bee89d9}{node})
+\begin{DoxyCompactList}\small\item\em Processes an Element within the document \end{DoxyCompactList}\item 
+void \hyperlink{class_web_server_1_1_process_a556b06df908a3a180ffa037846aaa1a6}{Process\+Comment} (X\+Comment e, \hyperlink{class_web_server_1_1_node}{Node} \hyperlink{class_web_server_1_1_process_ae62fa93d1a1f981b11418b620bee89d9}{node})
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_web_server_1_1_process}{Process} a comment that was in the document \end{DoxyCompactList}\item 
+void \hyperlink{class_web_server_1_1_process_a8e79c8d25eca802ac7e09bba030cd2e2}{Process\+Text} (X\+Text e, \hyperlink{class_web_server_1_1_node}{Node} n)
+\begin{DoxyCompactList}\small\item\em Processes text that was in the document \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static X\+Document \hyperlink{class_web_server_1_1_process_a3cd5a133e4c79d58f8a5d4c400614986}{Prepare} (string data, string \hyperlink{class_web_server_1_1_process_ae8a1513688e4d9e54294cff90728ea91}{type})
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+X\+Document \hyperlink{class_web_server_1_1_process_a4f27dd3d0d4b003338bdde9058d30493}{document}
+\item 
+\hyperlink{class_web_server_1_1_node}{Node} \hyperlink{class_web_server_1_1_process_ae62fa93d1a1f981b11418b620bee89d9}{node} = new \hyperlink{class_web_server_1_1_node}{Node}()
+\item 
+int \hyperlink{class_web_server_1_1_process_a2a5a9fc9ff073f956eadd06d49c89e32}{location} = 0
+\item 
+int \hyperlink{class_web_server_1_1_process_afee0af2eabd4725990ebc0c550a20014}{count} = 0
+\item 
+string \hyperlink{class_web_server_1_1_process_ae8a1513688e4d9e54294cff90728ea91}{type}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_web_server_1_1_process_acaf397891f58f68bf8e1704f9fc8a8b0}\label{class_web_server_1_1_process_acaf397891f58f68bf8e1704f9fc8a8b0}} 
+\index{Web\+Server\+::\+Process@{Web\+Server\+::\+Process}!Process@{Process}}
+\index{Process@{Process}!Web\+Server\+::\+Process@{Web\+Server\+::\+Process}}
+\subsubsection{\texorpdfstring{Process()}{Process()}}
+{\footnotesize\ttfamily Web\+Server.\+Process.\+Process (\begin{DoxyParamCaption}\item[{X\+Document}]{doc,  }\item[{string}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Initalisation of the object that prepares before processing 
+
+
+\begin{DoxyParams}{Parameters}
+{\em doc} & The document\\
+\hline
+{\em type} & The document file type\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_web_server_1_1_process_a8426008d439d0beef6f59c757a2c22eb}\label{class_web_server_1_1_process_a8426008d439d0beef6f59c757a2c22eb}} 
+\index{Web\+Server\+::\+Process@{Web\+Server\+::\+Process}!Get\+Process@{Get\+Process}}
+\index{Get\+Process@{Get\+Process}!Web\+Server\+::\+Process@{Web\+Server\+::\+Process}}
+\subsubsection{\texorpdfstring{Get\+Process()}{GetProcess()}}
+{\footnotesize\ttfamily static \hyperlink{class_web_server_1_1_process}{Process} Web\+Server.\+Process.\+Get\+Process (\begin{DoxyParamCaption}\item[{string}]{data,  }\item[{string}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Creates and returns a new process object 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & The document in string form\\
+\hline
+{\em type} & The type of document\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+New \hyperlink{class_web_server_1_1_process}{Process} object
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_web_server_1_1_process_a3cd5a133e4c79d58f8a5d4c400614986}\label{class_web_server_1_1_process_a3cd5a133e4c79d58f8a5d4c400614986}} 
+\index{Web\+Server\+::\+Process@{Web\+Server\+::\+Process}!Prepare@{Prepare}}
+\index{Prepare@{Prepare}!Web\+Server\+::\+Process@{Web\+Server\+::\+Process}}
+\subsubsection{\texorpdfstring{Prepare()}{Prepare()}}
+{\footnotesize\ttfamily static X\+Document Web\+Server.\+Process.\+Prepare (\begin{DoxyParamCaption}\item[{string}]{data,  }\item[{string}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & \\
+\hline
+{\em type} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_web_server_1_1_process_a556b06df908a3a180ffa037846aaa1a6}\label{class_web_server_1_1_process_a556b06df908a3a180ffa037846aaa1a6}} 
+\index{Web\+Server\+::\+Process@{Web\+Server\+::\+Process}!Process\+Comment@{Process\+Comment}}
+\index{Process\+Comment@{Process\+Comment}!Web\+Server\+::\+Process@{Web\+Server\+::\+Process}}
+\subsubsection{\texorpdfstring{Process\+Comment()}{ProcessComment()}}
+{\footnotesize\ttfamily void Web\+Server.\+Process.\+Process\+Comment (\begin{DoxyParamCaption}\item[{X\+Comment}]{e,  }\item[{\hyperlink{class_web_server_1_1_node}{Node}}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\hyperlink{class_web_server_1_1_process}{Process} a comment that was in the document 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & The comment element\\
+\hline
+{\em node} & The parent node\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_web_server_1_1_process_a1e01d70b31479a65280fbfbab855861b}\label{class_web_server_1_1_process_a1e01d70b31479a65280fbfbab855861b}} 
+\index{Web\+Server\+::\+Process@{Web\+Server\+::\+Process}!Process\+Document@{Process\+Document}}
+\index{Process\+Document@{Process\+Document}!Web\+Server\+::\+Process@{Web\+Server\+::\+Process}}
+\subsubsection{\texorpdfstring{Process\+Document()}{ProcessDocument()}}
+{\footnotesize\ttfamily \hyperlink{class_web_server_1_1_node}{Node} Web\+Server.\+Process.\+Process\+Document (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Processes the document sent via server 
+
+\begin{DoxyReturn}{Returns}
+Returns a root node that has been calculated from the document
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_web_server_1_1_process_ac7600e6ea07887aeb2f23f4e0a5dd01a}\label{class_web_server_1_1_process_ac7600e6ea07887aeb2f23f4e0a5dd01a}} 
+\index{Web\+Server\+::\+Process@{Web\+Server\+::\+Process}!Process\+Element@{Process\+Element}}
+\index{Process\+Element@{Process\+Element}!Web\+Server\+::\+Process@{Web\+Server\+::\+Process}}
+\subsubsection{\texorpdfstring{Process\+Element()}{ProcessElement()}}
+{\footnotesize\ttfamily \hyperlink{class_web_server_1_1_node}{Node} Web\+Server.\+Process.\+Process\+Element (\begin{DoxyParamCaption}\item[{X\+Element}]{e,  }\item[{\hyperlink{class_web_server_1_1_node}{Node}}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Processes an Element within the document 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & The element\\
+\hline
+{\em node} & The parent node\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_web_server_1_1_process_a8e79c8d25eca802ac7e09bba030cd2e2}\label{class_web_server_1_1_process_a8e79c8d25eca802ac7e09bba030cd2e2}} 
+\index{Web\+Server\+::\+Process@{Web\+Server\+::\+Process}!Process\+Text@{Process\+Text}}
+\index{Process\+Text@{Process\+Text}!Web\+Server\+::\+Process@{Web\+Server\+::\+Process}}
+\subsubsection{\texorpdfstring{Process\+Text()}{ProcessText()}}
+{\footnotesize\ttfamily void Web\+Server.\+Process.\+Process\+Text (\begin{DoxyParamCaption}\item[{X\+Text}]{e,  }\item[{\hyperlink{class_web_server_1_1_node}{Node}}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Processes text that was in the document 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & A Text element\\
+\hline
+{\em n} & The parent node\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_web_server_1_1_process_afee0af2eabd4725990ebc0c550a20014}\label{class_web_server_1_1_process_afee0af2eabd4725990ebc0c550a20014}} 
+\index{Web\+Server\+::\+Process@{Web\+Server\+::\+Process}!count@{count}}
+\index{count@{count}!Web\+Server\+::\+Process@{Web\+Server\+::\+Process}}
+\subsubsection{\texorpdfstring{count}{count}}
+{\footnotesize\ttfamily int Web\+Server.\+Process.\+count = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_web_server_1_1_process_a4f27dd3d0d4b003338bdde9058d30493}\label{class_web_server_1_1_process_a4f27dd3d0d4b003338bdde9058d30493}} 
+\index{Web\+Server\+::\+Process@{Web\+Server\+::\+Process}!document@{document}}
+\index{document@{document}!Web\+Server\+::\+Process@{Web\+Server\+::\+Process}}
+\subsubsection{\texorpdfstring{document}{document}}
+{\footnotesize\ttfamily X\+Document Web\+Server.\+Process.\+document\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_web_server_1_1_process_a2a5a9fc9ff073f956eadd06d49c89e32}\label{class_web_server_1_1_process_a2a5a9fc9ff073f956eadd06d49c89e32}} 
+\index{Web\+Server\+::\+Process@{Web\+Server\+::\+Process}!location@{location}}
+\index{location@{location}!Web\+Server\+::\+Process@{Web\+Server\+::\+Process}}
+\subsubsection{\texorpdfstring{location}{location}}
+{\footnotesize\ttfamily int Web\+Server.\+Process.\+location = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_web_server_1_1_process_ae62fa93d1a1f981b11418b620bee89d9}\label{class_web_server_1_1_process_ae62fa93d1a1f981b11418b620bee89d9}} 
+\index{Web\+Server\+::\+Process@{Web\+Server\+::\+Process}!node@{node}}
+\index{node@{node}!Web\+Server\+::\+Process@{Web\+Server\+::\+Process}}
+\subsubsection{\texorpdfstring{node}{node}}
+{\footnotesize\ttfamily \hyperlink{class_web_server_1_1_node}{Node} Web\+Server.\+Process.\+node = new \hyperlink{class_web_server_1_1_node}{Node}()\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_web_server_1_1_process_ae8a1513688e4d9e54294cff90728ea91}\label{class_web_server_1_1_process_ae8a1513688e4d9e54294cff90728ea91}} 
+\index{Web\+Server\+::\+Process@{Web\+Server\+::\+Process}!type@{type}}
+\index{type@{type}!Web\+Server\+::\+Process@{Web\+Server\+::\+Process}}
+\subsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily string Web\+Server.\+Process.\+type\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_process_8cs}{Process.\+cs}\end{DoxyCompactItemize}
