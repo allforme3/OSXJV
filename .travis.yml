@@ -4,4 +4,4 @@ before_install:
 before_script:
   - nuget restore WebServiceCSharp.sln
 after_script:
-  - nunit-console WebServiceCSharpTests/bin/Debug/WebServiceCSharpTests.dll
+  - nunit-console ./WebServiceCSharpTests/bin/Debug/WebServiceCSharpTests.dll
