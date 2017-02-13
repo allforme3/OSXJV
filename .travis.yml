@@ -1,4 +1,7 @@
 language: csharp
-solution: WebServiceCSharp.sln
+before_install:
+  - sudo apt-get install nunit-console
+before_script:
+  - nuget restore WebServiceCSharp.sln
 after_script:
   - nunit-console WebServiceCSharpTests/bin/Debug/WebServiceCSharpTests.dll
