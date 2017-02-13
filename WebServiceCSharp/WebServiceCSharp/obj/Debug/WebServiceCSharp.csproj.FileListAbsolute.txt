@@ -1,8 +1,0 @@
-c:\users\allforme3\documents\visual studio 2015\Projects\WebServiceCSharp\WebServiceCSharp\bin\Debug\WebServiceCSharp.exe.config
-c:\users\allforme3\documents\visual studio 2015\Projects\WebServiceCSharp\WebServiceCSharp\obj\Debug\WebServiceCSharp.csprojResolveAssemblyReference.cache
-c:\users\allforme3\documents\visual studio 2015\Projects\WebServiceCSharp\WebServiceCSharp\bin\Debug\WebServiceCSharp.exe
-c:\users\allforme3\documents\visual studio 2015\Projects\WebServiceCSharp\WebServiceCSharp\bin\Debug\WebServiceCSharp.pdb
-c:\users\allforme3\documents\visual studio 2015\Projects\WebServiceCSharp\WebServiceCSharp\obj\Debug\WebServiceCSharp.exe
-c:\users\allforme3\documents\visual studio 2015\Projects\WebServiceCSharp\WebServiceCSharp\obj\Debug\WebServiceCSharp.pdb
-c:\users\allforme3\documents\visual studio 2015\Projects\WebServiceCSharp\WebServiceCSharp\bin\Debug\Newtonsoft.Json.dll
-c:\users\allforme3\documents\visual studio 2015\Projects\WebServiceCSharp\WebServiceCSharp\bin\Debug\Newtonsoft.Json.xml
