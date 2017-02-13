@@ -4,61 +4,53 @@
         <name>WebServiceCSharp</name>
     </assembly>
     <members>
-        <member name="T:WebServer.Server">
+        <member name="T:WebServer.OSXJV">
             <summary>
             HTTPServer that process the incoming requests.
             </summary>
         </member>
-        <member name="F:WebServer.Server.port">
-            <summary>
-            Port to listen to one
-            </summary>
-        </member>
-        <member name="F:WebServer.Server.running">
+        <member name="F:WebServer.OSXJV.running">
             <summary>
             True if the server is able to accept requests.
             </summary>
         </member>
-        <member name="F:WebServer.Server.listener">
+        <member name="F:WebServer.OSXJV.cache">
             <summary>
-            
+            Keeps location of cached files
             </summary>
         </member>
-        <member name="F:WebServer.Server.cache">
+        <member name="M:WebServer.OSXJV.#ctor">
             <summary>
-            
+            The Server Handler
             </summary>
         </member>
-        <member name="M:WebServer.Server.#ctor">
+        <member name="M:WebServer.OSXJV.Start">
             <summary>
-            
+            Starts server in new thread
             </summary>
         </member>
-        <member name="M:WebServer.Server.Start">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="M:WebServer.Server.Run">
+        <member name="M:WebServer.OSXJV.Run">
             <summary>
             Function that constantly listens for connections
             </summary>
         </member>
-        <member name="M:WebServer.Server.HandleClient(System.Net.HttpListenerContext)">
+        <member name="M:WebServer.OSXJV.GetData(System.IO.Stream)">
             <summary>
-            Handles the client connect and extracts the data being sent to the server.
+            Extract the files from the request
             </summary>
-            <remarks>
-            This retrieves the user data via a stream and processes the multi form data recieved into objects and creates a response and sends it back to the user.
-            </remarks>
-            <param name="c"></param>
+            <param name="input">Requests input stream</param>
+            <returns>New Request Object</returns>
+            <exception cref="T:System.InvalidOperationException">Thrown when not files are included with the request</exception>
         </member>
-        <member name="M:WebServer.Server.Post(WebServer.Response,System.Net.HttpListenerResponse)">
+        <member name="M:WebServer.OSXJV.SaveFile(System.String,WebServer.Node)">
             <summary>
-            
+            Save request's data
             </summary>
-            <param name="res"></param>
-            <param name="stream"></param>
+            <param name="id">Unique ID</param>
+            <param name="nodes">The Processed Data</param>
+            <returns>if successful</returns>
+            <exception cref="T:System.ArgumentException">Thrown when nodes is null or id is null or empty</exception>
+            <exception cref="T:System.IO.IOException">Thrown when access to the disk is unavailable</exception>
         </member>
         <member name="T:WebServer.Attribute">
             <summary>

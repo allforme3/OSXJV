@@ -1,0 +1,163 @@
+\hypertarget{class_web_server_1_1_response}{}\section{Web\+Server.\+Response Class Reference}
+\label{class_web_server_1_1_response}\index{Web\+Server.\+Response@{Web\+Server.\+Response}}
+
+
+ 
+
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_web_server_1_1_response}{Response} \hyperlink{class_web_server_1_1_response_ad86b4d35ec228a530f3b4752f70145ec}{Get\+Response} (int \hyperlink{class_web_server_1_1_response_a132606b61e9c9d01b80114418920c0f7}{status}, string type, byte\mbox{[}$\,$\mbox{]} \hyperlink{class_web_server_1_1_response_aa1776556ba9d3b143497693375106ea1}{data})
+\begin{DoxyCompactList}\small\item\em A custom response object \end{DoxyCompactList}\item 
+static \hyperlink{class_web_server_1_1_response}{Response} \hyperlink{class_web_server_1_1_response_a54c55c0b70d8091d637b0d3e606bf722}{Get\+Response\+J\+S\+ON} (int \hyperlink{class_web_server_1_1_response_a132606b61e9c9d01b80114418920c0f7}{status}, byte\mbox{[}$\,$\mbox{]} \hyperlink{class_web_server_1_1_response_aa1776556ba9d3b143497693375106ea1}{data})
+\begin{DoxyCompactList}\small\item\em Return an application/json response \end{DoxyCompactList}\item 
+static \hyperlink{class_web_server_1_1_response}{Response} \hyperlink{class_web_server_1_1_response_a46a3f5b6a779ff8cc33003532cca0a42}{Get\+Response\+X\+ML} (int \hyperlink{class_web_server_1_1_response_a132606b61e9c9d01b80114418920c0f7}{status}, byte\mbox{[}$\,$\mbox{]} \hyperlink{class_web_server_1_1_response_aa1776556ba9d3b143497693375106ea1}{data})
+\begin{DoxyCompactList}\small\item\em Return an text/xml response \end{DoxyCompactList}\item 
+static \hyperlink{class_web_server_1_1_response}{Response} \hyperlink{class_web_server_1_1_response_a38454522b325b77fe0ac6ddab897c28a}{Get\+Error\+Response} ()
+\begin{DoxyCompactList}\small\item\em Return a error response object \end{DoxyCompactList}\item 
+static \hyperlink{class_web_server_1_1_response}{Response} \hyperlink{class_web_server_1_1_response_a4c07fb11cc4ca0f8b2c83dbcc7054c69}{Get\+Invalid\+Request\+Response} ()
+\begin{DoxyCompactList}\small\item\em Returns an invalid response object \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+byte \mbox{[}$\,$\mbox{]} \hyperlink{class_web_server_1_1_response_aa1776556ba9d3b143497693375106ea1}{data} = null
+\item 
+int \hyperlink{class_web_server_1_1_response_a132606b61e9c9d01b80114418920c0f7}{status}
+\item 
+string \hyperlink{class_web_server_1_1_response_a12b80a663fee3e25d797abd8bbcbaaef}{mime}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_web_server_1_1_response_a38454522b325b77fe0ac6ddab897c28a}\label{class_web_server_1_1_response_a38454522b325b77fe0ac6ddab897c28a}} 
+\index{Web\+Server\+::\+Response@{Web\+Server\+::\+Response}!Get\+Error\+Response@{Get\+Error\+Response}}
+\index{Get\+Error\+Response@{Get\+Error\+Response}!Web\+Server\+::\+Response@{Web\+Server\+::\+Response}}
+\subsubsection{\texorpdfstring{Get\+Error\+Response()}{GetErrorResponse()}}
+{\footnotesize\ttfamily static \hyperlink{class_web_server_1_1_response}{Response} Web\+Server.\+Response.\+Get\+Error\+Response (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Return a error response object 
+
+\begin{DoxyReturn}{Returns}
+New response object
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_web_server_1_1_response_a4c07fb11cc4ca0f8b2c83dbcc7054c69}\label{class_web_server_1_1_response_a4c07fb11cc4ca0f8b2c83dbcc7054c69}} 
+\index{Web\+Server\+::\+Response@{Web\+Server\+::\+Response}!Get\+Invalid\+Request\+Response@{Get\+Invalid\+Request\+Response}}
+\index{Get\+Invalid\+Request\+Response@{Get\+Invalid\+Request\+Response}!Web\+Server\+::\+Response@{Web\+Server\+::\+Response}}
+\subsubsection{\texorpdfstring{Get\+Invalid\+Request\+Response()}{GetInvalidRequestResponse()}}
+{\footnotesize\ttfamily static \hyperlink{class_web_server_1_1_response}{Response} Web\+Server.\+Response.\+Get\+Invalid\+Request\+Response (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns an invalid response object 
+
+\begin{DoxyReturn}{Returns}
+New response object
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_web_server_1_1_response_ad86b4d35ec228a530f3b4752f70145ec}\label{class_web_server_1_1_response_ad86b4d35ec228a530f3b4752f70145ec}} 
+\index{Web\+Server\+::\+Response@{Web\+Server\+::\+Response}!Get\+Response@{Get\+Response}}
+\index{Get\+Response@{Get\+Response}!Web\+Server\+::\+Response@{Web\+Server\+::\+Response}}
+\subsubsection{\texorpdfstring{Get\+Response()}{GetResponse()}}
+{\footnotesize\ttfamily static \hyperlink{class_web_server_1_1_response}{Response} Web\+Server.\+Response.\+Get\+Response (\begin{DoxyParamCaption}\item[{int}]{status,  }\item[{string}]{type,  }\item[{byte \mbox{[}$\,$\mbox{]}}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+A custom response object 
+
+
+\begin{DoxyParams}{Parameters}
+{\em status} & The H\+T\+TP Code to send back e.\+g. 200 for success\\
+\hline
+{\em type} & Data type to send back e.\+g. application/json\\
+\hline
+{\em data} & The data to send\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_web_server_1_1_response_a54c55c0b70d8091d637b0d3e606bf722}\label{class_web_server_1_1_response_a54c55c0b70d8091d637b0d3e606bf722}} 
+\index{Web\+Server\+::\+Response@{Web\+Server\+::\+Response}!Get\+Response\+J\+S\+ON@{Get\+Response\+J\+S\+ON}}
+\index{Get\+Response\+J\+S\+ON@{Get\+Response\+J\+S\+ON}!Web\+Server\+::\+Response@{Web\+Server\+::\+Response}}
+\subsubsection{\texorpdfstring{Get\+Response\+J\+S\+O\+N()}{GetResponseJSON()}}
+{\footnotesize\ttfamily static \hyperlink{class_web_server_1_1_response}{Response} Web\+Server.\+Response.\+Get\+Response\+J\+S\+ON (\begin{DoxyParamCaption}\item[{int}]{status,  }\item[{byte \mbox{[}$\,$\mbox{]}}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Return an application/json response 
+
+
+\begin{DoxyParams}{Parameters}
+{\em status} & The H\+T\+TP Code to send back e.\+g. 200 for success\\
+\hline
+{\em data} & The data to send\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+New response object
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_web_server_1_1_response_a46a3f5b6a779ff8cc33003532cca0a42}\label{class_web_server_1_1_response_a46a3f5b6a779ff8cc33003532cca0a42}} 
+\index{Web\+Server\+::\+Response@{Web\+Server\+::\+Response}!Get\+Response\+X\+ML@{Get\+Response\+X\+ML}}
+\index{Get\+Response\+X\+ML@{Get\+Response\+X\+ML}!Web\+Server\+::\+Response@{Web\+Server\+::\+Response}}
+\subsubsection{\texorpdfstring{Get\+Response\+X\+M\+L()}{GetResponseXML()}}
+{\footnotesize\ttfamily static \hyperlink{class_web_server_1_1_response}{Response} Web\+Server.\+Response.\+Get\+Response\+X\+ML (\begin{DoxyParamCaption}\item[{int}]{status,  }\item[{byte \mbox{[}$\,$\mbox{]}}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Return an text/xml response 
+
+
+\begin{DoxyParams}{Parameters}
+{\em status} & The H\+T\+TP Code to send back e.\+g. 200 for success\\
+\hline
+{\em data} & The data to send\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+New response object
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_web_server_1_1_response_aa1776556ba9d3b143497693375106ea1}\label{class_web_server_1_1_response_aa1776556ba9d3b143497693375106ea1}} 
+\index{Web\+Server\+::\+Response@{Web\+Server\+::\+Response}!data@{data}}
+\index{data@{data}!Web\+Server\+::\+Response@{Web\+Server\+::\+Response}}
+\subsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily byte \mbox{[}$\,$\mbox{]} Web\+Server.\+Response.\+data = null}
+
+
+
+
+
+\mbox{\Hypertarget{class_web_server_1_1_response_a12b80a663fee3e25d797abd8bbcbaaef}\label{class_web_server_1_1_response_a12b80a663fee3e25d797abd8bbcbaaef}} 
+\index{Web\+Server\+::\+Response@{Web\+Server\+::\+Response}!mime@{mime}}
+\index{mime@{mime}!Web\+Server\+::\+Response@{Web\+Server\+::\+Response}}
+\subsubsection{\texorpdfstring{mime}{mime}}
+{\footnotesize\ttfamily string Web\+Server.\+Response.\+mime}
+
+
+
+
+
+\mbox{\Hypertarget{class_web_server_1_1_response_a132606b61e9c9d01b80114418920c0f7}\label{class_web_server_1_1_response_a132606b61e9c9d01b80114418920c0f7}} 
+\index{Web\+Server\+::\+Response@{Web\+Server\+::\+Response}!status@{status}}
+\index{status@{status}!Web\+Server\+::\+Response@{Web\+Server\+::\+Response}}
+\subsubsection{\texorpdfstring{status}{status}}
+{\footnotesize\ttfamily int Web\+Server.\+Response.\+status}
+
+
+
+
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Response.\+cs\end{DoxyCompactItemize}

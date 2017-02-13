@@ -20,13 +20,8 @@ namespace WebServer
         /// <param name="args">Not Used</param>
         static void Main(string[] args)
         {
-            string xml = "<?xml version=\"1.0\"?><doc></doc>";
-            string type = "text/xml";
-            Process process = Process.GetProcess(xml, type);
-            Node n = process.ProcessDocument();
-            Output output = new Output(n);
-
-            Server s = new Server();
+            string path = new Uri(Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().CodeBase)).LocalPath;
+            OSXJV s = new OSXJV();
             s.Start();
         }
     }
