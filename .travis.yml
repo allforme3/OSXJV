@@ -2,4 +2,4 @@ language: csharp
 solution: WebServiceCSharp.sln
 script:
   - xbuild /p:Configuration=Release WebServiceCSharp.sln
-  - mono ./packages/NUnit.ConsoleRunner.3.6.0.*/tools/nunit3-console.exe ./WebServiceCSharpTests/bin/Release/WebServiceCSharpTests.dll
+  - mono ./packages/NUnit.ConsoleRunner.3.6.0/tools/nunit3-console.exe ./WebServiceCSharpTests/bin/Release/WebServiceCSharpTests.dll
