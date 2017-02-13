@@ -26,7 +26,8 @@ namespace WebServer.Tests
         [Test]
         public void CreateGridTest()
         {
-            string expected = "{\r\n  \"text\": \"doc\",\r\n  \"id\": 1,\r\n  \"state\": {\r\n    \"selected\": true\r\n  }\r\n}";
+
+            string expected = "{\"text\":\"doc\",\"id\":1,\"state\":{\"selected\":true}}";
             string xml = "<?xml version=\"1.0\"?><doc></doc>";
             string type = "text/xml";
 

@@ -23,7 +23,7 @@ namespace WebServer
     /// </summary>
     public class OSXJV
     {
-        private string path = new Uri(Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().CodeBase)).LocalPath;
+        public string path = Path.GetDirectoryName(new Uri(typeof(int).Assembly.CodeBase).LocalPath);
         private int port = 8082;
 
         /// <summary>

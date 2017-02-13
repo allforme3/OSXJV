@@ -20,7 +20,6 @@ namespace WebServer
         /// <param name="args">Not Used</param>
         static void Main(string[] args)
         {
-            string path = new Uri(Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().CodeBase)).LocalPath;
             OSXJV s = new OSXJV();
             s.Start();
         }

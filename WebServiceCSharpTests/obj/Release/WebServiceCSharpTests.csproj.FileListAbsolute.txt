@@ -15,3 +15,5 @@ C:\Users\Allforme3\Documents\Visual Studio 2015\Projects\WebServiceCSharp\WebSer
 C:\Users\Allforme3\Documents\Visual Studio 2015\Projects\WebServiceCSharp\WebServiceCSharpTests\obj\Release\WebServiceCSharpTests.csprojResolveAssemblyReference.cache
 C:\Users\Allforme3\Documents\Visual Studio 2015\Projects\WebServiceCSharp\WebServiceCSharpTests\obj\Release\WebServiceCSharpTests.dll
 C:\Users\Allforme3\Documents\Visual Studio 2015\Projects\WebServiceCSharp\WebServiceCSharpTests\obj\Release\WebServiceCSharpTests.pdb
+C:\Users\Allforme3\Documents\Visual Studio 2015\Projects\WebServiceCSharp\WebServiceCSharpTests\bin\Release\WebServiceCSharpTests.dll.config
+C:\Users\Allforme3\Documents\Visual Studio 2015\Projects\WebServiceCSharp\WebServiceCSharpTests\bin\Release\WebServiceCSharpTests.pdb

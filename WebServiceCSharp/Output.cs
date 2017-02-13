@@ -44,7 +44,7 @@ namespace WebServer
                 }
                 obj.Add("children", array);
             }
-            return obj.ToString();
+            return obj.ToString(Newtonsoft.Json.Formatting.None);
         }
 
         /// <summary>
