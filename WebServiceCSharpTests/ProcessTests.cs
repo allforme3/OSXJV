@@ -26,7 +26,7 @@ namespace WebServer.Tests
         [Test]
         public void ProcessTestNull()
         {
-            Assert.IsNull(Process.GetProcess(null, null));
+            Assert.Throws<ArgumentException>(() => Process.GetProcess(null, null));
         }
 
         [Test]
@@ -51,7 +51,7 @@ namespace WebServer.Tests
         public void ProcessDocumentTestInvalidData()
         {
             string xml = "</////trtgrg xml version=\"1.0\"?><doc></doc>";
-            Assert.Throws<ArgumentException>(() => Process.GetProcess(xml, "text/xml"));
+            Assert.Throws<XmlException>(() => Process.GetProcess(xml, "text/xml"));
         }
 
         [Test]

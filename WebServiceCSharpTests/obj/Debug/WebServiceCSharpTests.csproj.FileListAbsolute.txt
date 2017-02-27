@@ -2,15 +2,11 @@ C:\Users\Allforme3\Documents\Visual Studio 2015\Projects\WebServiceCSharp\WebSer
 C:\Users\Allforme3\Documents\Visual Studio 2015\Projects\WebServiceCSharp\WebServiceCSharpTests\bin\Debug\WebServiceCSharpTests.pdb
 C:\Users\Allforme3\Documents\Visual Studio 2015\Projects\WebServiceCSharp\WebServiceCSharpTests\bin\Debug\WebServiceCSharp.exe
 C:\Users\Allforme3\Documents\Visual Studio 2015\Projects\WebServiceCSharp\WebServiceCSharpTests\bin\Debug\Newtonsoft.Json.dll
-C:\Users\Allforme3\Documents\Visual Studio 2015\Projects\WebServiceCSharp\WebServiceCSharpTests\bin\Debug\Castle.Core.dll
 C:\Users\Allforme3\Documents\Visual Studio 2015\Projects\WebServiceCSharp\WebServiceCSharpTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
-C:\Users\Allforme3\Documents\Visual Studio 2015\Projects\WebServiceCSharp\WebServiceCSharpTests\bin\Debug\MultipartReader.dll
 C:\Users\Allforme3\Documents\Visual Studio 2015\Projects\WebServiceCSharp\WebServiceCSharpTests\bin\Debug\nunit.framework.dll
 C:\Users\Allforme3\Documents\Visual Studio 2015\Projects\WebServiceCSharp\WebServiceCSharpTests\bin\Debug\HttpMultipartParser.dll
 C:\Users\Allforme3\Documents\Visual Studio 2015\Projects\WebServiceCSharp\WebServiceCSharpTests\bin\Debug\WebServiceCSharp.pdb
 C:\Users\Allforme3\Documents\Visual Studio 2015\Projects\WebServiceCSharp\WebServiceCSharpTests\bin\Debug\WebServiceCSharp.xml
-C:\Users\Allforme3\Documents\Visual Studio 2015\Projects\WebServiceCSharp\WebServiceCSharpTests\bin\Debug\Castle.Core.xml
-C:\Users\Allforme3\Documents\Visual Studio 2015\Projects\WebServiceCSharp\WebServiceCSharpTests\bin\Debug\MultipartReader.pdb
 C:\Users\Allforme3\Documents\Visual Studio 2015\Projects\WebServiceCSharp\WebServiceCSharpTests\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Allforme3\Documents\Visual Studio 2015\Projects\WebServiceCSharp\WebServiceCSharpTests\bin\Debug\nunit.framework.xml
 C:\Users\Allforme3\Documents\Visual Studio 2015\Projects\WebServiceCSharp\WebServiceCSharpTests\bin\Debug\HttpMultipartParser.xml
