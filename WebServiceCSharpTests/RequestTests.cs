@@ -29,7 +29,7 @@ namespace WebServer.Tests
         [Test]
         public void GetRequestTestNullParams()
         {
-            Request.GetRequest(null, null, null);
+            Assert.Throws<ArgumentException>(() => Request.GetRequest(null, null, null));
         }
 
         [Test]
