@@ -13,3 +13,4 @@ C:\Users\Allforme3\Documents\Visual Studio 2015\Projects\WebServiceCSharp\WebSer
 C:\Users\Allforme3\Documents\Visual Studio 2015\Projects\WebServiceCSharp\WebServiceCSharp\bin\Release\System.Net.Http.Formatting.xml
 C:\Users\Allforme3\Documents\Visual Studio 2015\Projects\WebServiceCSharp\WebServiceCSharp\obj\Release\WebServiceCSharp.exe
 C:\Users\Allforme3\Documents\Visual Studio 2015\Projects\WebServiceCSharp\WebServiceCSharp\obj\Release\WebServiceCSharp.pdb
+C:\Users\Allforme3\Documents\Visual Studio 2015\Projects\WebServiceCSharp\WebServiceCSharp\obj\Release\WebServiceCSharp.csprojResolveAssemblyReference.cache

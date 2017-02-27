@@ -1,5 +1,4 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using WebServer;
+﻿using WebServer;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,15 +6,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 using System.Xml;
+using NUnit.Framework;
 
 namespace WebServer.Tests
 {
-    [TestClass()]
+    [TestFixture]
     public class ProcessTests
     {
-        
-        [TestCategory("Process Tests")]
-        [TestMethod()]
+       
+        [Test]
         public void ProcessTest()
         {
             string xml = "<?xml version=\"1.0\"?><doc></doc>";
@@ -24,16 +23,13 @@ namespace WebServer.Tests
             Assert.IsNotNull(Process.GetProcess(xml, type));
         }
 
-        [TestCategory("Process Tests")]
-        [TestMethod()]
-        [ExpectedException(typeof(ArgumentException), "Raise exception when data is null")]
+        [Test]
         public void ProcessTestNull()
         {
             Assert.IsNull(Process.GetProcess(null, null));
         }
 
-        [TestCategory("Process Tests")]
-        [TestMethod()]
+        [Test]
         public void ProcessDocumentTestXMLReturnsTypeOfNode()
         {
             string xml = "<?xml version=\"1.0\"?><doc></doc>";
@@ -42,8 +38,7 @@ namespace WebServer.Tests
             Assert.AreEqual(typeof(Node),pro.ProcessDocument().GetType());
         }
 
-        [TestCategory("Process Tests")]
-        [TestMethod()]
+        [Test]
         public void ProcessDocumentTestJSONReturnsTypeOfNode()
         {
             string xml = "{ 'name':'jones'}";
@@ -52,17 +47,14 @@ namespace WebServer.Tests
             Assert.AreEqual(typeof(Node), pro.ProcessDocument().GetType());
         }
 
-        [TestCategory("Process Tests")]
-        [TestMethod()]
-        [ExpectedException(typeof(XmlException))]
+        [Test]
         public void ProcessDocumentTestInvalidData()
         {
             string xml = "</////trtgrg xml version=\"1.0\"?><doc></doc>";
-            Process pro = Process.GetProcess(xml, "text/xml");
+            Assert.Throws<ArgumentException>(() => Process.GetProcess(xml, "text/xml"));
         }
 
-        [TestCategory("Process Tests")]
-        [TestMethod()]
+        [Test]
         public void TestingCorrectXML()
         {
             string xml = "<?xml version=\"1.0\"?><doc></doc>";
@@ -82,8 +74,7 @@ namespace WebServer.Tests
 
         }
 
-        [TestCategory("Process Tests")]
-        [TestMethod()]
+        [Test]
         public void TestingCorrectJSON()
         {
             string xml = "{ 'name':'jones'}";

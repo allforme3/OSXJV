@@ -1,18 +1,16 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using WebServer;
+﻿using WebServer;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using NUnit.Framework;
 namespace WebServer.Tests
 {
-    [TestClass()]
+    [TestFixture]
     public class ResponseTests
     {
-        [TestCategory("Response")]
-        [TestMethod()]
+        [Test]
         public void GetResponseTestCorrect()
         {
             int passed = 200;
@@ -22,8 +20,7 @@ namespace WebServer.Tests
             Assert.IsNotNull(Response.GetResponse(passed, mime, data));
         }
 
-        [TestCategory("Response")]
-        [TestMethod()]
+        [Test]
         public void GetResponseTestGetInvalidResponse()
         {
             Response response = Response.GetInvalidRequestResponse();
@@ -33,8 +30,7 @@ namespace WebServer.Tests
             Assert.IsTrue(response.data.Length == 0);
         }
 
-        [TestCategory("Response")]
-        [TestMethod()]
+        [Test]
         public void GetResponseTestGetErrorResponse()
         {
             Response response = Response.GetErrorResponse();
@@ -44,66 +40,54 @@ namespace WebServer.Tests
             Assert.IsTrue(response.data.Length == 0);
         }
 
-        [TestCategory("Response")]
-        [TestMethod()]
-        [ExpectedException(typeof(ArgumentException), "Raise exception when Status is zero")]
+        [Test]
         public void GetResponseTestStatusZero()
         {
             string mime = "application/json";
             byte[] data = new byte[0];
 
-            Response.GetResponse(0, mime, data);
+            Assert.Throws<ArgumentException>(() => Response.GetResponse(0, mime, data));
         }
 
-        [TestCategory("Response")]
-        [TestMethod()]
-        [ExpectedException(typeof(ArgumentException), "Raise exception when Mime is null")]
+        [Test]
         public void GetResponseTestNullMime()
         {
             int passed = 200;
             byte[] data = new byte[0];
 
-            Response.GetResponse(passed, null, data);
+            Assert.Throws<ArgumentException>(() => Response.GetResponse(passed, null, data));
         }
 
-        [TestCategory("Response")]
-        [TestMethod()]
-        [ExpectedException(typeof(ArgumentException), "Raise exception when Data is null")]
+        [Test]
         public void GetResponseTestNullData()
         {
             int passed = 200;
             string mime = "application/json";
 
-            Response.GetResponse(passed, mime, null);
+            Assert.Throws<ArgumentException>(() => Response.GetResponse(passed, mime, null));
         }
 
 
-        [TestCategory("Response")]
-        [TestMethod()]
-        [ExpectedException(typeof(ArgumentException), "Raise exception when Mime is null")]
+        [Test]
         public void GetResponseTestEmptyMime()
         {
             int passed = 200;
             byte[] data = new byte[0];
 
-            Response.GetResponse(passed, "", data);
+            Assert.Throws<ArgumentException>(() => Response.GetResponse(passed, "", data));
         }
 
-        [TestCategory("Response")]
-        [TestMethod()]
-        [ExpectedException(typeof(ArgumentException), "Raise exception when Data is empty")]
+        [Test]
         public void GetResponseTestEmptyData()
         {
             int passed = 200;
             string mime = "application/json";
 
-            Response.GetResponse(passed, mime, new byte[0]);
+            Assert.Throws<ArgumentException>(() => Response.GetResponse(passed, mime, new byte[0]));
         }
 
         //ResponseJSON
-
-        [TestCategory("Response")]
-        [TestMethod()]
+        [Test]
         public void GetResponseJSONTestCorrect()
         {
             int passed = 200;
@@ -111,39 +95,31 @@ namespace WebServer.Tests
 
             Assert.IsNotNull(Response.GetResponseJSON(passed, data));
         }
-
-        [TestCategory("Response")]
-        [TestMethod()]
-        [ExpectedException(typeof(ArgumentException), "Raise exception when Status is zero")]
+        [Test]
         public void GetResponseJSONTestStatusZero()
         {
             byte[] data = new byte[0];
 
-            Response.GetResponseJSON(0, data);
+            Assert.Throws<ArgumentException>(() => Response.GetResponseJSON(0, data));
         }
 
-        [TestCategory("Response")]
-        [TestMethod()]
-        [ExpectedException(typeof(ArgumentException), "Raise exception when Data is null")]
+        [Test]
         public void GetResponseJSONTestNullData()
         {
             int passed = 200;
-            Response.GetResponseJSON(passed, null);
+            Assert.Throws<ArgumentException>(() => Response.GetResponseJSON(passed, null));
         }
 
-        [TestCategory("Response")]
-        [TestMethod()]
-        [ExpectedException(typeof(ArgumentException), "Raise exception when Data is empty")]
+        [Test]
         public void GetResponseJSONTestEmptyData()
         {
             int passed = 200;
-            Response.GetResponseJSON(passed, new byte[0]);
+            Assert.Throws<ArgumentException>(() => Response.GetResponseJSON(passed, new byte[0]));
         }
 
         //ResponseXML
 
-        [TestCategory("Response")]
-        [TestMethod()]
+        [Test]
         public void GetResponseXMLTestCorrect()
         {
             int passed = 200;
@@ -152,32 +128,26 @@ namespace WebServer.Tests
             Assert.IsNotNull(Response.GetResponseXML(passed, data));
         }
 
-        [TestCategory("Response")]
-        [TestMethod()]
-        [ExpectedException(typeof(ArgumentException), "Raise exception when Status is zero")]
+        [Test]
         public void GetResponseXMLTestStatusZero()
         {
             byte[] data = new byte[0];
 
-            Response.GetResponseXML(0, data);
+            Assert.Throws<ArgumentException>(() => Response.GetResponseXML(0, data));
         }
 
-        [TestCategory("Response")]
-        [TestMethod()]
-        [ExpectedException(typeof(ArgumentException), "Raise exception when Data is null")]
+        [Test]
         public void GetResponseXMLTestNullData()
         {
             int passed = 200;
-            Response.GetResponseXML(passed, null);
+            Assert.Throws<ArgumentException>(() => Response.GetResponseXML(passed, null));
         }
 
-        [TestCategory("Response")]
-        [TestMethod()]
-        [ExpectedException(typeof(ArgumentException), "Raise exception when Data is empty")]
+        [Test]
         public void GetResponseXMLTestEmptyData()
         {
             int passed = 200;
-            Response.GetResponseXML(passed, new byte[0]);
+            Assert.Throws<ArgumentException>(() => Response.GetResponseXML(passed, new byte[0]));
         }
     }
 }

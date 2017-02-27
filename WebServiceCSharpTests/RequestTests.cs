@@ -1,18 +1,17 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using WebServer;
+﻿using WebServer;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using NUnit.Framework;
 
 namespace WebServer.Tests
 {
-    [TestClass()]
+    [TestFixture]
     public class RequestTests
     {
-        [TestCategory("Request")]
-        [TestMethod()]
+        [Test]
         public void GetRequestTestCorrect()
         {
             string filename = "Test";
@@ -27,75 +26,61 @@ namespace WebServer.Tests
             Assert.AreEqual(data,r.Data);
         }
 
-        [TestCategory("Request")]
-        [TestMethod()]
-        [ExpectedException(typeof(ArgumentException), "Raise exception when filename is null")]
+        [Test]
         public void GetRequestTestNullParams()
         {
             Request.GetRequest(null, null, null);
         }
 
-        [TestCategory("Request")]
-        [TestMethod()]
-        [ExpectedException(typeof(ArgumentException), "Raise exception when data is null")]
+        [Test]
         public void GetRequestTestNullFilename()
         {
             string contentType = "text/xml";
             string data = "<?xml version=\"1.0\" encoding=\"utf - 8\"?><test>test</test>";
-            Request.GetRequest(null, contentType, data);
+            Assert.Throws<ArgumentException>(() => Request.GetRequest(null, contentType, data));
         }
 
-        [TestCategory("Request")]
-        [TestMethod()]
-        [ExpectedException(typeof(ArgumentException), "Raise exception when contentType is null")]
+
+        [Test]
         public void GetRequestTestNullContentType()
         {
             string filename = "Test";
             string data = "<?xml version=\"1.0\" encoding=\"utf - 8\"?><test>test</test>";
-            Request.GetRequest(filename, null, data);
+            Assert.Throws<ArgumentException>(() => Request.GetRequest(filename, null, data));
         }
 
-        [TestCategory("Request")]
-        [TestMethod()]
-        [ExpectedException(typeof(ArgumentException), "Raise exception when data is null")]
+        [Test]
         public void GetRequestTestNullData()
         {
             string filename = "Test";
             string contentType = "text/xml";
-            Request.GetRequest(filename, contentType, null);
+            Assert.Throws<ArgumentException>(() => Request.GetRequest(filename, contentType, null));
         }
 
-        [TestCategory("Request")]
-        [TestMethod()]
-        [ExpectedException(typeof(ArgumentException), "Raise exception when filename is empty")]
+        [Test]
         public void GetRequestTestEmptyFilename()
         {
             string filename = "";
             string contentType = "text/xml";
             string data = "<?xml version=\"1.0\" encoding=\"utf - 8\"?><test>test</test>";
-            Request.GetRequest(filename, contentType, data);
+            Assert.Throws<ArgumentException>(() => Request.GetRequest(filename, contentType, data));
         }
 
-        [TestCategory("Request")]
-        [TestMethod()]
-        [ExpectedException(typeof(ArgumentException), "Raise exception when contentType is empty")]
+        [Test]
         public void GetRequestTestEmptyContentType()
         {
             string filename = "Test";
             string contentType = "";
             string data = "<?xml version=\"1.0\" encoding=\"utf - 8\"?><test>test</test>";
-            Request.GetRequest(filename, contentType, data);
+            Assert.Throws<ArgumentException>(() => Request.GetRequest(filename, contentType, data));
         }
-
-        [TestCategory("Request")]
-        [TestMethod()]
-        [ExpectedException(typeof(ArgumentException), "Raise exception when data is empty")]
+        [Test]
         public void GetRequestTestEmptyData()
         {
             string filename = "Test";
             string contentType = "text/xml";
             string data = "";
-            Request.GetRequest(filename, contentType, data);
+            Assert.Throws<ArgumentException>(() => Request.GetRequest(filename, contentType, data));
         }
     }
 }
