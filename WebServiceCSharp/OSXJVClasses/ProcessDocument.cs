@@ -262,8 +262,6 @@ namespace OSXJV.Classes
 
                 if (e.Nodes() != null)
                 {
-                    List<XNode> list = e.Nodes().ToList();
-
                     foreach (XNode n in e.Nodes())
                     {
                         switch (n.NodeType)

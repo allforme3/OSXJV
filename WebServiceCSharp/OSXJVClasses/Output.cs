@@ -36,12 +36,6 @@ namespace OSXJV.Classes
         private List<Tuple<int, string>> cNodes = new List<Tuple<int, string>>();
 
         /// <summary>
-        /// Used in Single Threaded operation to keep track of div id.
-        /// </summary>
-        [ThreadStatic]
-        private static int count = 0;
-
-        /// <summary>
         /// Creation of a Output object.
         /// </summary>
         /// <param name="nodes">A processed object of Nodes</param>
@@ -406,10 +400,7 @@ namespace OSXJV.Classes
         {
             string output = "";
             if (CheckNodeNumber(n, number))
-            {
-                
-                List<Thread> threadList = new List<Thread>();
-
+            {               
                 int count = 0;
                 output += CreateNodeView(n, "node");
                 foreach (Node n2 in n.Children)

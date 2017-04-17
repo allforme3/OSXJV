@@ -9,6 +9,7 @@ namespace OSXJV.Server.Tests
         [Test]
         public void HttpserverTest()
         {
+			Console.WriteLine ("HttpserverTest");
             OSXJVServer server = new OSXJVServer();
             Assert.IsNotNull(server);
         }
@@ -16,6 +17,7 @@ namespace OSXJV.Server.Tests
         [Test]
         public void StartTest()
         {
+			Console.WriteLine ("StartTest");
             OSXJVServer server = new OSXJVServer();
             Assert.IsTrue(server.Start());
             //server.Stop();
@@ -24,6 +26,7 @@ namespace OSXJV.Server.Tests
         [Test]
         public void StopTest()
         {
+			Console.WriteLine ("StopTest");
             OSXJVServer server = new OSXJVServer();
             server.Start();
             Assert.IsTrue(server.Stop());
@@ -33,10 +36,10 @@ namespace OSXJV.Server.Tests
         [Test]
         public void StopTestAlreadyStoppedOrNotRunning()
         {
+			Console.WriteLine ("StopTestAlreadyStoppedOrNotRunning");
             OSXJVServer server = new OSXJVServer();
             Assert.IsTrue(server.Stop());
 
         }
     }
-
 }

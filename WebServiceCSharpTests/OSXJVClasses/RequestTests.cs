@@ -14,6 +14,7 @@ namespace OSXJV.Classes.Tests
         [Test]
         public void GetRequestTestCorrect()
         {
+			Console.WriteLine ("GetRequestTestCorrect");
             string filename = "Test";
             string contentType = "text/xml";
             string data = "<?xml version=\"1.0\" encoding=\"utf - 8\"?><test>test</test>";
@@ -29,12 +30,14 @@ namespace OSXJV.Classes.Tests
         [Test]
         public void GetRequestTestNullParams()
         {
+			Console.WriteLine ("GetRequestTestNullParams");
             Assert.Throws<ArgumentException>(() => Request.GetRequest(null, null, null));
         }
 
         [Test]
         public void GetRequestTestNullFilename()
         {
+			Console.WriteLine ("GetRequestTestNullFilename");
             string contentType = "text/xml";
             string data = "<?xml version=\"1.0\" encoding=\"utf - 8\"?><test>test</test>";
             Assert.Throws<ArgumentException>(() => Request.GetRequest(null, contentType, data));
@@ -44,6 +47,7 @@ namespace OSXJV.Classes.Tests
         [Test]
         public void GetRequestTestNullContentType()
         {
+			Console.WriteLine ("GetRequestTestNullContentType");
             string filename = "Test";
             string data = "<?xml version=\"1.0\" encoding=\"utf - 8\"?><test>test</test>";
             Assert.Throws<ArgumentException>(() => Request.GetRequest(filename, null, data));
@@ -52,6 +56,7 @@ namespace OSXJV.Classes.Tests
         [Test]
         public void GetRequestTestNullData()
         {
+			Console.WriteLine ("GetRequestTestNullData");
             string filename = "Test";
             string contentType = "text/xml";
             Assert.Throws<ArgumentException>(() => Request.GetRequest(filename, contentType, null));
@@ -60,6 +65,7 @@ namespace OSXJV.Classes.Tests
         [Test]
         public void GetRequestTestEmptyFilename()
         {
+			Console.WriteLine ("GetRequestTestEmptyFilename");
             string filename = "";
             string contentType = "text/xml";
             string data = "<?xml version=\"1.0\" encoding=\"utf - 8\"?><test>test</test>";
@@ -69,6 +75,7 @@ namespace OSXJV.Classes.Tests
         [Test]
         public void GetRequestTestEmptyContentType()
         {
+			Console.WriteLine ("GetRequestTestEmptyContentType");
             string filename = "Test";
             string contentType = "";
             string data = "<?xml version=\"1.0\" encoding=\"utf - 8\"?><test>test</test>";
@@ -77,6 +84,7 @@ namespace OSXJV.Classes.Tests
         [Test]
         public void GetRequestTestEmptyData()
         {
+			Console.WriteLine ("GetRequestTestEmptyData");
             string filename = "Test";
             string contentType = "text/xml";
             string data = "";

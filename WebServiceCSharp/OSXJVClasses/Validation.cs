@@ -11,14 +11,27 @@ namespace OSXJV.Classes
     /// </summary>
     public class Validation
     {
+		/// <summary>
+		/// The inst.
+		/// </summary>
+		private static Validation inst;
+
         /// <summary>
         /// Constructor
         /// </summary>
-        private Validation()
-        {
+        private Validation(){}
 
-        }
-
+		/// <summary>
+		/// Gets the instance.
+		/// </summary>
+		/// <returns>The instance.</returns>
+		public static Validation GetInstance()
+		{
+			if (inst != null)
+				return inst;
+			else
+				return (inst = new Validation ());
+		}
         /// <summary>
         /// Checks the document and if it is valid
         /// </summary>
@@ -28,7 +41,7 @@ namespace OSXJV.Classes
         /// <exception cref="ArgumentException">Invalid data type or data and type cannot be null</exception>
         /// <exception cref="XmlException">Invalid XML or HTML</exception>
         /// <exception cref="JsonReaderException">Invalid JSON</exception>
-        public static bool CheckDocument(string data, string type)
+        public bool CheckDocument(string data, string type)
         {
             if(string.IsNullOrEmpty(data) || string.IsNullOrEmpty(type))
             {

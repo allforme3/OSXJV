@@ -16,7 +16,6 @@ var class_o_s_x_j_v_1_1_classes_1_1_output =
     [ "GetParent", "class_o_s_x_j_v_1_1_classes_1_1_output.html#a162bab48da1d8670a5163629e5a20f38", null ],
     [ "GridGetChidren", "class_o_s_x_j_v_1_1_classes_1_1_output.html#ae5fc34394eb163f74e6ea3b5529fde8b", null ],
     [ "cNodes", "class_o_s_x_j_v_1_1_classes_1_1_output.html#a651539b9cf8982fd360ac7c751508481", null ],
-    [ "count", "class_o_s_x_j_v_1_1_classes_1_1_output.html#ab374bb570e1d3ac302bcd13a84fc097e", null ],
     [ "GotParent", "class_o_s_x_j_v_1_1_classes_1_1_output.html#a1a19cd8613090d74e4805644d32ed1f9", null ],
     [ "left", "class_o_s_x_j_v_1_1_classes_1_1_output.html#aa217e902748305bd19220d9c19c05da6", null ],
     [ "nodes", "class_o_s_x_j_v_1_1_classes_1_1_output.html#a72e31d6226f5df594a2828f739bb6912", null ],

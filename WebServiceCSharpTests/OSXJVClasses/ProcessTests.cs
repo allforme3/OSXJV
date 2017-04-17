@@ -17,6 +17,7 @@ namespace OSXJV.Classes.Tests
         [Test]
         public void ProcessTest()
         {
+			Console.WriteLine ("ProcessTest");
             string xml = "<?xml version=\"1.0\"?><doc></doc>";
             string type = "XML";
             
@@ -26,12 +27,14 @@ namespace OSXJV.Classes.Tests
         [Test]
         public void ProcessTestNull()
         {
+			Console.WriteLine ("ProcessTestNull");
             Assert.Throws<ArgumentException>(() => ProcessDocument.GetProcess(null, null));
         }
 
         [Test]
         public void ProcessDocumentTestXMLReturnsTypeOfNode()
         {
+			Console.WriteLine ("ProcessDocumentTestXMLReturnsTypeOfNode");
             string xml = "<?xml version=\"1.0\"?><doc></doc>";
             string type = "XML";
             ProcessDocument pro = ProcessDocument.GetProcess(xml,type);            
@@ -41,6 +44,7 @@ namespace OSXJV.Classes.Tests
         [Test]
         public void ProcessDocumentTestJSONReturnsTypeOfNode()
         {
+			Console.WriteLine ("ProcessDocumentTestJSONReturnsTypeOfNode");
             string json = "{ 'name':'jones'}";
             string type = "JSON";
             ProcessDocument pro = ProcessDocument.GetProcess(json, type);
@@ -50,6 +54,7 @@ namespace OSXJV.Classes.Tests
         [Test]
         public void ProcessDocumentTestInvalidData()
         {
+			Console.WriteLine ("ProcessDocumentTestInvalidData");
             string xml = "</////trtgrg xml version=\"1.0\"?><doc></doc>";
             Assert.Throws<XmlException>(() => ProcessDocument.GetProcess(xml, "XML"));
         }
@@ -57,6 +62,7 @@ namespace OSXJV.Classes.Tests
         [Test]
         public void TestingCorrectXML()
         {
+			Console.WriteLine ("TestingCorrectXML");
             string xml = "<?xml version=\"1.0\"?><doc></doc>";
             string type = "XML";
             ProcessDocument process = ProcessDocument.GetProcess(xml, type);
@@ -77,6 +83,7 @@ namespace OSXJV.Classes.Tests
         [Test]
         public void TestingCorrectJSON()
         {
+			Console.WriteLine ("TestingCorrectJSON");
             string json = "{ 'name':'jones'}";
             string type = "JSON";
             ProcessDocument process = ProcessDocument.GetProcess(json, type);
@@ -87,7 +94,7 @@ namespace OSXJV.Classes.Tests
             root.Visited = true;
             root.Value = "jones";
           
-            Node n = process.Process();
+            Node n = process.ProcessParallel();
 
             Assert.AreEqual(root.Value, n.Value);
             Assert.AreEqual(root.Name, n.Name);
@@ -98,6 +105,7 @@ namespace OSXJV.Classes.Tests
         [TestCase("{ 'name':'jones'}")]
         public void TestingSingleThreadAndMultiThreadSimularity(string json)
         {
+			Console.WriteLine ("TestingSingleThreadAndMultiThreadSimularity");
             string type = "JSON";
             ProcessDocument process = ProcessDocument.GetProcess(json, type);
             Console.WriteLine(process);
@@ -105,6 +113,8 @@ namespace OSXJV.Classes.Tests
             Node n = process.Process();
             process = ProcessDocument.GetProcess(json, type);
             Node n2 = process.ProcessParallel();
+
+			Console.WriteLine(process);
 
             Assert.AreEqual(n2.Value, n.Value);
             Assert.AreEqual(n2.Name, n.Name);

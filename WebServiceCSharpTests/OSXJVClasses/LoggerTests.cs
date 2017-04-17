@@ -15,12 +15,14 @@ namespace OSXJV.Classes.Tests
         [OneTimeSetUp]
         public void RunBeforeAnyTests()
         {
+			Console.WriteLine ("Setup Logger");
             Environment.CurrentDirectory = TestContext.CurrentContext.TestDirectory;
         }
 
         [Test]
         public void SetupTest()
         {
+			Console.WriteLine ("SetupTest");
             string arg = "";
 
             string dir = Directory.GetCurrentDirectory();
@@ -35,7 +37,8 @@ namespace OSXJV.Classes.Tests
 
         [Test]
         public void GetInstanceTest()
-        {
+		{
+			Console.WriteLine ("SetupTest");
             string arg = "";
 
             string dir = Directory.GetCurrentDirectory();
@@ -51,6 +54,7 @@ namespace OSXJV.Classes.Tests
         [Test]
         public void TestLoggerClose()
         {
+			Console.WriteLine ("TestLoggerClose");
             string arg = "";
 
             string dir = Directory.GetCurrentDirectory();
@@ -66,6 +70,7 @@ namespace OSXJV.Classes.Tests
         [Test]
         public void WriteErrorTest()
         {
+			Console.WriteLine ("WriteErrorTest");
             string arg = "";
 
             string dir = Directory.GetCurrentDirectory();
@@ -84,6 +89,7 @@ namespace OSXJV.Classes.Tests
         [Test]
         public void GetLoggerWithoutSetupException() 
         {
+			Console.WriteLine ("GetLoggerWithoutSetupException");
             Assert.Throws<Exception>(() => Logger.GetInstance());
         }
     }

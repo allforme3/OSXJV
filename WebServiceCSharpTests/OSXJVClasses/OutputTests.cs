@@ -15,6 +15,7 @@ namespace OSXJV.Classes.Tests
         [Test]
         public void OutputTest()
         {
+			Console.WriteLine ("OutputTest");
             string xml = "<?xml version=\"1.0\"?><doc></doc>";
             string type = "XML";
             ProcessDocument process = ProcessDocument.GetProcess(xml, type);
@@ -27,7 +28,7 @@ namespace OSXJV.Classes.Tests
         [Test]
         public void CreateGridTest()
         {
-
+			Console.WriteLine ("CreateGridTest");
             JObject expected = JObject.Parse("{\"text\":\"doc\",\"id\":1,\"state\":{\"selected\":true}}");
             string xml = "<?xml version=\"1.0\"?><doc></doc>";
             string type = "XML";
@@ -42,6 +43,7 @@ namespace OSXJV.Classes.Tests
         [Test]
         public void CreateViewTest()
         {
+			Console.WriteLine ("CreateViewTest");
             string expected = "<div class='text-center ui-layout-center ui-layout-pane ui-layout-pane-center'><div style ='display:inline-block' class='ui-selectable ui-droppable'><div id='1'class='node type ui-draggable ui-selectee' style='left:100px; top:130px;'><div class='head'><span><button class='nameBtn' onclick='GetNode(1)'>doc</button></span></div></div></div></div></div>";
             string xml = "<?xml version=\"1.0\"?><doc></doc>";
             string type = "XML";
@@ -57,6 +59,7 @@ namespace OSXJV.Classes.Tests
         [Test]
         public void OutputTestNodesNull()
         {
+			Console.WriteLine ("OutputTestNodesNull");
             Assert.Throws< ArgumentException>(() => new Output(null));
         }
     }

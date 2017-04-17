@@ -13,12 +13,14 @@ namespace OSXJV.Classes.Tests
         [OneTimeSetUp]
         public void RunBeforeAnyTests()
         {
+			Console.WriteLine("Testing Cache Manager");
             Environment.CurrentDirectory = TestContext.CurrentContext.TestDirectory;
         }
 
         [Test]
         public void SetupTest()
         {
+			Console.WriteLine("SetupTest");
             string arg = "";
 
             string dir = Directory.GetCurrentDirectory();
@@ -32,6 +34,7 @@ namespace OSXJV.Classes.Tests
         [Test]
         public void GetInstanceTest()
         {
+			Console.WriteLine("GetInstanceTest");
             string arg = "";
 
             string dir = Directory.GetCurrentDirectory();
@@ -45,6 +48,7 @@ namespace OSXJV.Classes.Tests
         [Test]
         public void getFileTest()
         {
+			Console.WriteLine("getFileTest");
             string arg = "";
 
             string dir = Directory.GetCurrentDirectory();
@@ -68,6 +72,7 @@ namespace OSXJV.Classes.Tests
         [Test]
         public void saveFileTest()
         {
+			Console.WriteLine("saveFileTest");
             string arg = "";
 
             string dir = Directory.GetCurrentDirectory();
@@ -90,12 +95,14 @@ namespace OSXJV.Classes.Tests
         [Test]
         public void GetCacheManagerWithoutSetupException()
         {
+			Console.WriteLine("GetCacheManagerWithoutSetupException");
             Assert.Throws<Exception>(() => CacheManager.GetInstance());
         }
 
         [Test]
         public void TestCacheManagerClose()
         {
+			Console.WriteLine("TestCacheManagerClose");
             string arg = "";
 
             string dir = Directory.GetCurrentDirectory();

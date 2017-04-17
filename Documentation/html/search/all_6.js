@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['inst',['inst',['../class_o_s_x_j_v_1_1_classes_1_1_cache_manager.html#a1811f8375f1a99c95397a8a746a98538',1,'OSXJV.Classes.CacheManager.inst()'],['../class_o_s_x_j_v_1_1_classes_1_1_logger.html#a771d2981a9e66e0ecc032efb05991478',1,'OSXJV.Classes.Logger.inst()']]]
+  ['inst',['inst',['../class_o_s_x_j_v_1_1_classes_1_1_cache_manager.html#a1811f8375f1a99c95397a8a746a98538',1,'OSXJV.Classes.CacheManager.inst()'],['../class_o_s_x_j_v_1_1_classes_1_1_logger.html#a771d2981a9e66e0ecc032efb05991478',1,'OSXJV.Classes.Logger.inst()'],['../class_o_s_x_j_v_1_1_classes_1_1_validation.html#a58327c55e737b71622db64481d18e394',1,'OSXJV.Classes.Validation.inst()']]]
 ];

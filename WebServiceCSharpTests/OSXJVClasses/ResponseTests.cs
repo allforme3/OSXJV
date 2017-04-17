@@ -13,6 +13,7 @@ namespace OSXJV.Classes.Tests
         [Test]
         public void GetResponseTestCorrect()
         {
+			Console.WriteLine ("GetResponseTestCorrect");
             int passed = 200;
             string mime = "application/json";
             byte[] data = new byte[5];
@@ -23,6 +24,7 @@ namespace OSXJV.Classes.Tests
         [Test]
         public void GetResponseTestGetInvalidResponse()
         {
+			Console.WriteLine ("GetResponseTestGetInvalidResponse");
             Response response = Response.GetInvalidRequestResponse();
 
             Assert.AreEqual(405, response.status);
@@ -33,6 +35,7 @@ namespace OSXJV.Classes.Tests
         [Test]
         public void GetResponseTestGetErrorResponse()
         {
+			Console.WriteLine ("GetResponseTestGetErrorResponse");
             Response response = Response.GetErrorResponse("Error");
 
             Assert.AreEqual(400, response.status);
@@ -43,6 +46,7 @@ namespace OSXJV.Classes.Tests
         [Test]
         public void GetResponseTestStatusZero()
         {
+			Console.WriteLine ("GetResponseTestStatusZero");
             string mime = "application/json";
             byte[] data = new byte[0];
 
@@ -52,6 +56,7 @@ namespace OSXJV.Classes.Tests
         [Test]
         public void GetResponseTestNullMime()
         {
+			Console.WriteLine ("GetResponseTestNullMime");
             int passed = 200;
             byte[] data = new byte[0];
 
@@ -61,6 +66,7 @@ namespace OSXJV.Classes.Tests
         [Test]
         public void GetResponseTestNullData()
         {
+			Console.WriteLine ("GetResponseTestNullData");
             int passed = 200;
             string mime = "application/json";
 
@@ -71,6 +77,7 @@ namespace OSXJV.Classes.Tests
         [Test]
         public void GetResponseTestEmptyMime()
         {
+			Console.WriteLine ("GetResponseTestEmptyMime");
             int passed = 200;
             byte[] data = new byte[0];
 
@@ -80,6 +87,7 @@ namespace OSXJV.Classes.Tests
         [Test]
         public void GetResponseTestEmptyData()
         {
+			Console.WriteLine ("GetResponseTestEmptyData");
             int passed = 200;
             string mime = "application/json";
 
@@ -90,6 +98,7 @@ namespace OSXJV.Classes.Tests
         [Test]
         public void GetResponseJSONTestCorrect()
         {
+			Console.WriteLine ("GetResponseJSONTestCorrect");
             int passed = 200;
             byte[] data = new byte[5];
 
@@ -98,6 +107,7 @@ namespace OSXJV.Classes.Tests
         [Test]
         public void GetResponseJSONTestStatusZero()
         {
+			Console.WriteLine ("GetResponseJSONTestStatusZero");
             byte[] data = new byte[0];
 
             Assert.Throws<ArgumentException>(() => Response.GetResponseJSON(0, data));
@@ -106,13 +116,15 @@ namespace OSXJV.Classes.Tests
         [Test]
         public void GetResponseJSONTestNullData()
         {
+			Console.WriteLine ("GetResponseJSONTestNullData");
             int passed = 200;
             Assert.Throws<ArgumentException>(() => Response.GetResponseJSON(passed, null));
         }
 
         [Test]
         public void GetResponseJSONTestEmptyData()
-        {
+		{
+			Console.WriteLine ("GetResponseJSONTestEmptyData");
             int passed = 200;
             Assert.Throws<ArgumentException>(() => Response.GetResponseJSON(passed, new byte[0]));
         }
@@ -122,6 +134,7 @@ namespace OSXJV.Classes.Tests
         [Test]
         public void GetResponseXMLTestCorrect()
         {
+			Console.WriteLine ("GetResponseXMLTestCorrect");
             int passed = 200;
             byte[] data = new byte[5];
 
@@ -131,6 +144,7 @@ namespace OSXJV.Classes.Tests
         [Test]
         public void GetResponseXMLTestStatusZero()
         {
+			Console.WriteLine ("GetResponseXMLTestStatusZero");
             byte[] data = new byte[0];
 
             Assert.Throws<ArgumentException>(() => Response.GetResponseXML(0, data));
@@ -139,6 +153,7 @@ namespace OSXJV.Classes.Tests
         [Test]
         public void GetResponseXMLTestNullData()
         {
+			Console.WriteLine ("GetResponseXMLTestNullData");
             int passed = 200;
             Assert.Throws<ArgumentException>(() => Response.GetResponseXML(passed, null));
         }
@@ -146,6 +161,7 @@ namespace OSXJV.Classes.Tests
         [Test]
         public void GetResponseXMLTestEmptyData()
         {
+			Console.WriteLine ("GetResponseXMLTestEmptyData");
             int passed = 200;
             Assert.Throws<ArgumentException>(() => Response.GetResponseXML(passed, new byte[0]));
         }
