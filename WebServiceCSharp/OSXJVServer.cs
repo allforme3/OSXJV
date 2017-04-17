@@ -257,7 +257,7 @@ namespace OSXJV.Server
 
                     try
                     {
-                        Validation.CheckDocument(r.Data, r.Type);
+                        Validation.GetInstance().CheckDocument(r.Data, r.Type);
                     }
                     catch (Exception e)
                     {
