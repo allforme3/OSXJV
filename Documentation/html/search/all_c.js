@@ -1,14 +1,9 @@
 var searchData=
 [
-  ['port',['port',['../class_web_server_1_1_server.html#a36d33c2119e76991cc667cef94f3a051',1,'WebServer::Server']]],
-  ['post',['Post',['../class_web_server_1_1_response.html#ad364efcff262f67707831b940a484a70',1,'WebServer::Response']]],
-  ['prepare',['Prepare',['../class_web_server_1_1_process.html#a3cd5a133e4c79d58f8a5d4c400614986',1,'WebServer::Process']]],
-  ['process',['Process',['../class_web_server_1_1_process.html',1,'WebServer.Process'],['../class_web_server_1_1_process.html#acaf397891f58f68bf8e1704f9fc8a8b0',1,'WebServer.Process.Process()']]],
-  ['process_2ecs',['Process.cs',['../_process_8cs.html',1,'']]],
-  ['processcomment',['ProcessComment',['../class_web_server_1_1_process.html#a556b06df908a3a180ffa037846aaa1a6',1,'WebServer::Process']]],
-  ['processdocument',['ProcessDocument',['../class_web_server_1_1_process.html#a1e01d70b31479a65280fbfbab855861b',1,'WebServer::Process']]],
-  ['processelement',['ProcessElement',['../class_web_server_1_1_process.html#ac7600e6ea07887aeb2f23f4e0a5dd01a',1,'WebServer::Process']]],
-  ['processtext',['ProcessText',['../class_web_server_1_1_process.html#a8e79c8d25eca802ac7e09bba030cd2e2',1,'WebServer::Process']]],
-  ['program',['Program',['../class_web_server_1_1_program.html',1,'WebServer']]],
-  ['program_2ecs',['Program.cs',['../_program_8cs.html',1,'']]]
+  ['request',['Request',['../class_o_s_x_j_v_1_1_classes_1_1_request.html',1,'OSXJV.Classes.Request'],['../class_o_s_x_j_v_1_1_classes_1_1_request.html#a5cb769234da92877921e3cb213b318d4',1,'OSXJV.Classes.Request.Request()']]],
+  ['request_2ecs',['Request.cs',['../_request_8cs.html',1,'']]],
+  ['response',['Response',['../class_o_s_x_j_v_1_1_classes_1_1_response.html',1,'OSXJV.Classes.Response'],['../class_o_s_x_j_v_1_1_classes_1_1_response.html#ac6f56c40aeed8f04f8a1beaaf7489dba',1,'OSXJV.Classes.Response.Response()']]],
+  ['response_2ecs',['Response.cs',['../_response_8cs.html',1,'']]],
+  ['run',['Run',['../class_o_s_x_j_v_1_1_server_1_1_o_s_x_j_v_server.html#a4c651f22e0adc230a7bc215d5487f307',1,'OSXJV::Server::OSXJVServer']]],
+  ['running',['running',['../class_o_s_x_j_v_1_1_server_1_1_o_s_x_j_v_server.html#ab67d850050114505c9832e9e1f51be37',1,'OSXJV::Server::OSXJVServer']]]
 ];

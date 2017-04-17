@@ -1,0 +1,6 @@
+<map id="OSXJV.Server.OSXJVServer.SaveFile" name="OSXJV.Server.OSXJVServer.SaveFile">
+<area shape="rect" id="node2" href="$class_o_s_x_j_v_1_1_classes_1_1_cache_manager.html#ac2e16d35de216747fc479677cae8cdfa" title="Get the single instance of the class " alt="" coords="265,5,474,47"/>
+<area shape="rect" id="node3" href="$class_o_s_x_j_v_1_1_classes_1_1_logger.html#a2a477f5d695f4508f0dc410889e8c543" title="Gets the single instance of Logger " alt="" coords="278,71,461,112"/>
+<area shape="rect" id="node4" href="$class_o_s_x_j_v_1_1_classes_1_1_cache_manager.html#a963e720f9bc90147c7b1b6a823c6fc90" title="Save the file to the local system for caching " alt="" coords="241,137,497,163"/>
+<area shape="rect" id="node5" href="$class_o_s_x_j_v_1_1_classes_1_1_logger.html#a9e8b52f3b327b680b68c4cbf58e12506" title="Writes an error the location provided " alt="" coords="273,188,465,229"/>
+</map>

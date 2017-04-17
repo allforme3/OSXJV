@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['children',['Children',['../class_web_server_1_1_node.html#a54936fd455c2d73feb51bff4525d1910',1,'WebServer::Node']]],
-  ['comments',['Comments',['../class_web_server_1_1_node.html#a6df5cac89012beddce9bc43b2dc82f8c',1,'WebServer::Node']]]
+  ['children',['Children',['../class_o_s_x_j_v_1_1_classes_1_1_node.html#a5f9c337bde16aa3795785fb6d6a40f4f',1,'OSXJV::Classes::Node']]],
+  ['comments',['Comments',['../class_o_s_x_j_v_1_1_classes_1_1_node.html#a65f6cd6fd6a653703036268624a2bc40',1,'OSXJV::Classes::Node']]]
 ];

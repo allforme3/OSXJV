@@ -1,9 +1,10 @@
 var searchData=
 [
-  ['request',['Request',['../class_web_server_1_1_request.html',1,'WebServer.Request'],['../class_web_server_1_1_request.html#a0b50f163bb69df3aabb9046c44c9446a',1,'WebServer.Request.Request()']]],
-  ['request_2ecs',['Request.cs',['../_request_8cs.html',1,'']]],
-  ['response',['Response',['../class_web_server_1_1_response.html',1,'WebServer.Response'],['../class_web_server_1_1_response.html#afea2e7fdc234a0ffa1a5e384f0aae4f0',1,'WebServer.Response.Response()']]],
-  ['response_2ecs',['Response.cs',['../_response_8cs.html',1,'']]],
-  ['run',['Run',['../class_web_server_1_1_server.html#a83ce026fab9839ed0ca193977c50bb7b',1,'WebServer::Server']]],
-  ['running',['running',['../class_web_server_1_1_server.html#aea270e1d81ce0cd9fab583d7c5b3d607',1,'WebServer::Server']]]
+  ['savefile',['saveFile',['../class_o_s_x_j_v_1_1_classes_1_1_cache_manager.html#a963e720f9bc90147c7b1b6a823c6fc90',1,'OSXJV.Classes.CacheManager.saveFile()'],['../class_o_s_x_j_v_1_1_server_1_1_o_s_x_j_v_server.html#a19400fed63008a173b023db3edfd3ae4',1,'OSXJV.Server.OSXJVServer.SaveFile()']]],
+  ['segmentnormalize',['SegmentNormalize',['../class_o_s_x_j_v_1_1_server_1_1_o_s_x_j_v_server.html#a00a3cb161beed2c6ede068e1ff2f923e',1,'OSXJV::Server::OSXJVServer']]],
+  ['serverthread',['serverThread',['../class_o_s_x_j_v_1_1_server_1_1_o_s_x_j_v_server.html#ae17443a10ea72dd9c60843c7920b2dcc',1,'OSXJV::Server::OSXJVServer']]],
+  ['setup',['Setup',['../class_o_s_x_j_v_1_1_classes_1_1_cache_manager.html#ac682445072c579d7b976af99c9995f3d',1,'OSXJV.Classes.CacheManager.Setup()'],['../class_o_s_x_j_v_1_1_classes_1_1_logger.html#ae62090d38942a29d315036cda767e04d',1,'OSXJV.Classes.Logger.Setup()']]],
+  ['start',['Start',['../class_o_s_x_j_v_1_1_server_1_1_o_s_x_j_v_server.html#a73a36306fbbb432b33ae40d931afce75',1,'OSXJV::Server::OSXJVServer']]],
+  ['status',['status',['../class_o_s_x_j_v_1_1_classes_1_1_response.html#a6446a07b25d59ccf5b37f1bcf302fbd9',1,'OSXJV::Classes::Response']]],
+  ['stop',['Stop',['../class_o_s_x_j_v_1_1_server_1_1_o_s_x_j_v_server.html#a08b3eff634f7b0266e32c91a0a5eb1ef',1,'OSXJV::Server::OSXJVServer']]]
 ];

@@ -1,0 +1,6 @@
+<map id="OSXJV.Classes.Logger.GetInstance" name="OSXJV.Classes.Logger.GetInstance">
+<area shape="rect" id="node2" href="$class_o_s_x_j_v_1_1_server_1_1_o_s_x_j_v_server.html#a80ef03219e79c3637d2b26bc1749567f" title="Handles a GET request. " alt="" coords="236,5,424,47"/>
+<area shape="rect" id="node3" href="$class_o_s_x_j_v_1_1_server_1_1_o_s_x_j_v_server.html#a0a6564b9c4d43a1946f35dc5eafb98e0" title="Handles a POST request. " alt="" coords="236,71,424,112"/>
+<area shape="rect" id="node4" href="$class_o_s_x_j_v_1_1_server_1_1_o_s_x_j_v_server.html#a9d916d63044b4d8fbe8375d0dd0dbda0" title="Handles Requests Asyncronously " alt="" coords="236,136,424,177"/>
+<area shape="rect" id="node5" href="$class_o_s_x_j_v_1_1_server_1_1_o_s_x_j_v_server.html#a19400fed63008a173b023db3edfd3ae4" title="Save data recievied from client. " alt="" coords="236,201,424,243"/>
+</map>

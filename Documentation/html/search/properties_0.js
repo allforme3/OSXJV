@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['attributes',['Attributes',['../class_web_server_1_1_node.html#a1eab0c9c9079b2b18c546dc293fa7dc5',1,'WebServer::Node']]]
+  ['attributes',['Attributes',['../class_o_s_x_j_v_1_1_classes_1_1_node.html#a184f24fc6259c2859bc59d8d0a0e84de',1,'OSXJV::Classes::Node']]]
 ];

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['listener',['listener',['../class_web_server_1_1_server.html#a5ab44ecc1b382c640c3a351c135e9c71',1,'WebServer::Server']]],
-  ['location',['location',['../class_web_server_1_1_process.html#a2a5a9fc9ff073f956eadd06d49c89e32',1,'WebServer::Process']]]
+  ['main',['Main',['../class_web_server_1_1_program.html#a2a54edf2719a4715e7efa96f89ab5260',1,'WebServer::Program']]],
+  ['mime',['mime',['../class_o_s_x_j_v_1_1_classes_1_1_response.html#aab2775e462c888a5d3eade4bf96bd401',1,'OSXJV::Classes::Response']]]
 ];

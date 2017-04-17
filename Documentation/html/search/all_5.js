@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['getprocess',['GetProcess',['../class_web_server_1_1_process.html#a8426008d439d0beef6f59c757a2c22eb',1,'WebServer::Process']]],
-  ['getrequest',['GetRequest',['../class_web_server_1_1_request.html#aa79751fd888bac7c160ab4d06ba6d20a',1,'WebServer::Request']]],
-  ['getresponse',['GetResponse',['../class_web_server_1_1_response.html#a717abf63a92eb95a56308f017393de17',1,'WebServer::Response']]],
-  ['gridgetchidren',['gridGetChidren',['../class_web_server_1_1_output.html#a236a91df7171746a519133dfdc578777',1,'WebServer::Output']]]
+  ['handleclient',['HandleClient',['../class_o_s_x_j_v_1_1_server_1_1_o_s_x_j_v_server.html#a37dc2f810fea5f2f49a477eeb486aec4',1,'OSXJV::Server::OSXJVServer']]],
+  ['handleget',['HandleGet',['../class_o_s_x_j_v_1_1_server_1_1_o_s_x_j_v_server.html#a80ef03219e79c3637d2b26bc1749567f',1,'OSXJV::Server::OSXJVServer']]],
+  ['handleoptions',['HandleOptions',['../class_o_s_x_j_v_1_1_server_1_1_o_s_x_j_v_server.html#af6f20ecdbc0f692dea599d43d52c186f',1,'OSXJV::Server::OSXJVServer']]],
+  ['handlepost',['HandlePost',['../class_o_s_x_j_v_1_1_server_1_1_o_s_x_j_v_server.html#a0a6564b9c4d43a1946f35dc5eafb98e0',1,'OSXJV::Server::OSXJVServer']]]
 ];

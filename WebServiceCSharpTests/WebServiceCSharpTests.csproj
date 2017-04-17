@@ -57,18 +57,23 @@
     </When>
     <Otherwise>
       <ItemGroup>
-        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework">
+          <Private>False</Private>
+        </Reference>
       </ItemGroup>
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="OSXJVClasses\CacheManagerTests.cs" />
+    <Compile Include="OSXJVClasses\LoggerTests.cs" />
     <Compile Include="OSXJVTests.cs" />
-    <Compile Include="OutputTests.cs" />
-    <Compile Include="ProcessTests.cs" />
+    <Compile Include="OSXJVClasses\OutputTests.cs" />
+    <Compile Include="OSXJVClasses\ProcessTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RequestTests.cs" />
-    <Compile Include="ResponseTests.cs" />
-    <Compile Include="ValidationTests.cs" />
+    <Compile Include="OSXJVClasses\RequestTests.cs" />
+    <Compile Include="OSXJVClasses\ResponseTests.cs" />
+    <Compile Include="OSXJVClasses\ValidationTests.cs" />
+    <Compile Include="SystemTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\WebServiceCSharp\WebServiceCSharp.csproj">
@@ -82,6 +87,10 @@
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="TestFiles\TestFile1.xml" />
+    <Content Include="TestFiles\TestFile1Result.xml" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
