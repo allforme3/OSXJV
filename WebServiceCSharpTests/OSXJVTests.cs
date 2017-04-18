@@ -1,5 +1,6 @@
 ﻿using NUnit.Framework;
 using System;
+using System.IO;
 
 namespace OSXJV.Server.Tests
 {
@@ -18,8 +19,22 @@ namespace OSXJV.Server.Tests
         public void StartTest()
         {
 			Console.WriteLine ("StartTest");
+
+            Environment.CurrentDirectory = TestContext.CurrentContext.TestDirectory;
+            string arg = "";
+            string arg2 = "";
+
+            string dir = Directory.GetCurrentDirectory();
+            arg = dir + "/Logger/";
+            arg2 = dir + "/Cache/";
+
+            if (!Directory.Exists(arg))
+                Directory.CreateDirectory(arg);
+            if (!Directory.Exists(arg2))
+                Directory.CreateDirectory(arg2);
+
             OSXJVServer server = new OSXJVServer();
-            Assert.IsTrue(server.Start());
+            Assert.IsTrue(server.Start(arg,arg2));
             //server.Stop();
         }
 
@@ -27,8 +42,22 @@ namespace OSXJV.Server.Tests
         public void StopTest()
         {
 			Console.WriteLine ("StopTest");
+
+            Environment.CurrentDirectory = TestContext.CurrentContext.TestDirectory;
+            string arg = "";
+            string arg2 = "";
+
+            string dir = Directory.GetCurrentDirectory();
+            arg = dir + "/Logger/";
+            arg2 = dir + "/Cache/";
+
+            if (!Directory.Exists(arg))
+                Directory.CreateDirectory(arg);
+            if (!Directory.Exists(arg2))
+                Directory.CreateDirectory(arg2);
+
             OSXJVServer server = new OSXJVServer();
-            server.Start();
+            server.Start(arg,arg2);
             Assert.IsTrue(server.Stop());
 
         }

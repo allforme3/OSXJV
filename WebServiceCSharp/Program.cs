@@ -37,35 +37,18 @@ namespace WebServer
             }
             else
             {
-                bool pass = false;
                 try
                 {
-                    pass = CacheManager.Setup(args[0]);
-                    pass = Logger.Setup(args[1]);
+                    OSXJVServer s = new OSXJVServer();
+                    s.Start(args[0], args[1]);
                 }
                 catch (Exception e)
                 {
-                    Console.WriteLine("Error Setting Cache and Logger Directory: {0}", e.Message);
+                    Console.WriteLine(e.Message);
+                    Console.WriteLine("Press any key to exit");
+                    Console.Read();
                 }
-                if (pass)
-                {
-                    OSXJVServer s = new OSXJVServer();
-                    s.Start();
-                }
-
-                //Check Cache every hour to remove old files
-                while (true)
-                {
-                    Thread.Sleep(3600000);
-
-                    string[] files = Directory.GetFiles(args[0]);
-
-                    foreach (string file in files)
-                    {
-                        if (File.GetLastAccessTime(file) < DateTime.Now.AddHours(-6.0))
-                            File.Delete(file);
-                    }
-                }
+                             
             }
         }
     }

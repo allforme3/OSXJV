@@ -21,12 +21,21 @@ namespace OSXJV.Server
         /// True if the server is able to accept requests.
         /// </summary>
         public static bool running = false; //sets if the server is currently running
+
+        /// <summary>
+        /// HttpListener 
+        /// </summary>
         private HttpListener listener;
 
         /// <summary>
-        /// 
+        /// Server Thread
         /// </summary>
         private Thread serverThread = null;
+
+        /// <summary>
+        /// Cache Controller
+        /// </summary>
+        private Thread cacheThread = null;
 
         /// <summary>
         /// The Server Handler
@@ -39,17 +48,32 @@ namespace OSXJV.Server
 
         /// <summary>
         /// Starts server in new thread
+        /// <param name="cachePath">Cache Folder Location</param>
+        /// <param name="loggerPath">Logger Folder Location</param>
         /// </summary>
-        public bool Start()
-        {            
-            serverThread = new Thread(new ThreadStart(Run));
+        public bool Start(string cachePath, string loggerPath)
+        {
+            bool success = false;
+
+            success = CacheManager.Setup(cachePath);
+            success = Logger.Setup(loggerPath);
+
+            serverThread = new Thread(new ThreadStart(Run)); //Server thread
+            cacheThread = new Thread(new ThreadStart(ManageCache)); //Cache manage thread
             try
             {
                 serverThread.Start();
+                cacheThread.Start();
             }
-            catch
-            {}                        
-            return serverThread.IsAlive;
+            catch(Exception e)
+            {
+                throw e;
+            }
+
+            success = cacheThread.IsAlive;
+            success = serverThread.IsAlive;
+
+            return success;
         }
 
         /// <summary>
@@ -90,29 +114,6 @@ namespace OSXJV.Server
 
                 if (result.CompletedSynchronously)
                     Console.WriteLine("Completed Synchronously");
-
-                /*
-                 * Old Method of Creating a Thread
-                 * 
-                Thread response = new Thread(() =>
-                {
-                    try
-                    {
-                        Console.WriteLine("Processing");
-                        HandleClient(hlc);
-
-                        Console.WriteLine("Finished");
-                    }
-                    catch(Exception e)
-                    {
-                        Logger.GetInstance().WriteError(e.Message);
-                        hlc.Response.StatusCode = 500;
-                        hlc.Response.Close();
-                    }
-                });
-                response.Start();
-                *
-                */
             }         
         }
 
@@ -437,6 +438,33 @@ namespace OSXJV.Server
         private string SegmentNormalize(string input)
         {
             return input.Replace("/", "");
+        }
+
+        /// <summary>
+        /// Manages cache
+        /// </summary>
+        private void ManageCache()
+        {
+            while (true)
+            {
+                Thread.Sleep(3600000);
+                try
+                {
+                    CacheManager.ManageCache();
+                }
+                catch (Exception e)
+                {
+                    try
+                    {
+                        Logger.GetInstance().WriteError(e.Message);
+                    }
+                    catch
+                    {
+                        Console.WriteLine("Logger and Cache Manager not setup");
+                    }
+                }
+                
+            }
         }
     }
 }
